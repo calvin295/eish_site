@@ -46,5 +46,6 @@ export default IndexPage
   privacy policy on its own page
 
   **PHILOSOPHY SHOULD ALWAYS BE COMING THROUGH**
+  one additional line so the file changes.
 */
 
