@@ -30,6 +30,7 @@ const IndexPage = () => (
 export default IndexPage
 
 /*
+  anotha one.
   slugline
   aleisia portrait. qualifications.
   blurb about kinesio-therapy
