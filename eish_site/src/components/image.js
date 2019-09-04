@@ -14,6 +14,7 @@ import Img from "gatsby-image"
  */
 
  //so you can put an input in here to query the appropriate image.
+ //
 
 const Image = () => {
   const data = useStaticQuery(graphql`

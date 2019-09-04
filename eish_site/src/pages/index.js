@@ -10,20 +10,18 @@ import FAQ from "../components/faq"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>I offer private training and kinesio-therapy sessions at your convenience, in pursuit of your goals, for your health.</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <h1>Private training and kinesiotherapy sessions at your convenience, in pursuit of your goals, for your health.</h1>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> {/* Makes a small left aligned div */}
       <Image />
       <h2> - Aleisia Arkley, Certified Exercise Physiologist® with the Canadian Society for Exercise Physiology (CSEP)</h2>
     </div>
-    <p>What is kinesiology? - Simply put, kinesiology is the study of movement. Specializations can include anything under the umbrella of the anatomical, physiological and biomechanical relationships of movement in the human body.</p>
+    <h2>What is Kinesiology? </h2>
+    <p>Simply put, kinesiology is the study of movement. Specializations can include anything under the umbrella of the anatomical, physiological and biomechanical relationships of movement in the human body.</p>
     <h2>Services</h2>
-    <p>Chronic pain management • Improving Range of Motion and Balance • Managing Physical Limitations and Strengthening • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering individual passion for daily active living</p>
+    <p>Chronic pain management • Improved Range of Motion and Balance • Managing Physical Limitations • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering individual passion for daily active living</p>
     <p></p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
     </div>
-    <FAQ />
-    <Link to="/page-2/">Privacy Policy</Link>
   </Layout>
 )
 
@@ -33,7 +31,7 @@ export default IndexPage
   anotha one.
   slugline
   aleisia portrait. qualifications.
-  blurb about kinesio-therapy
+  blurb about kinesiotherapy
   treatments offered
 
   FAQ

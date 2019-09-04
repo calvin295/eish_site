@@ -9,24 +9,74 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+    <div class="topNav"> {/*Need to change from header to just a link with its own styling*/}
+      <Link
+        to="/"
+        style={{
+          fontSize: '2em',
+        }}
+        className='navLink'
+      >
+        {siteTitle}
+      </Link>
+      <Link
+        to="/bio"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          fontSize: '1em',
+        }}
+        className='navLink'
+      >
+        About
+      </Link>
+      <Link
+        to="/resources"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          fontSize: '1em',
+        }}
+        className='navLink'
+      >
+        Resources
+      </Link>
+      |
+      <Link
+        to="/services"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          fontSize: '1em',
+        }}
+        className='navLink'
+      >
+        Services
+      </Link>
+      |
+      <Link
+        to="/rates"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          fontSize: '1em',
+        }}
+        className='navLink'
+      >
+        Rates
+      </Link>
+      |
+      <Link
+        to="/book"
+        style={{
+          color: 'white',
+          textDecoration: 'none',
+          fontSize: '1em',
+        }}
+        className='navLink'
+      >
+        Book
+      </Link>
     </div>
   </header>
 )

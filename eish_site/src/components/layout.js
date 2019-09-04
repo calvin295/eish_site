@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Link } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
@@ -39,6 +39,8 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <p></p>
+          <Link to="/privacy-policy/">Privacy Policy</Link>
         </footer>
       </div>
     </>
