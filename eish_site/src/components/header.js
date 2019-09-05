@@ -21,58 +21,30 @@ const Header = ({ siteTitle }) => (
       </Link>
       <Link
         to="/bio"
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1em',
-        }}
         className='navLink'
       >
         About
       </Link>
       <Link
         to="/resources"
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1em',
-        }}
         className='navLink'
       >
         Resources
       </Link>
-      |
       <Link
         to="/services"
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1em',
-        }}
         className='navLink'
       >
         Services
       </Link>
-      |
       <Link
         to="/rates"
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1em',
-        }}
         className='navLink'
       >
         Rates
       </Link>
-      |
       <Link
         to="/book"
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontSize: '1em',
-        }}
         className='navLink'
       >
         Book

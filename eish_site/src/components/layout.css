@@ -68,12 +68,11 @@ template {
   /* ...and now for the proper property */
   transition:.5s;
 }
+
 .navLink:hover {
   color: orange;
 }
-.navLink:active {
-  color: red;
-}
+
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;

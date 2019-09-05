@@ -20,6 +20,7 @@ const IndexPage = () => (
     <h2>Services</h2>
     <p>Chronic pain management • Improved Range of Motion and Balance • Managing Physical Limitations • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering individual passion for daily active living</p>
     <p></p>
+    <FAQ/>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
   </Layout>
