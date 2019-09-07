@@ -35,14 +35,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+      </div>
+      <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
           <p></p>
           <Link to="/privacy-policy/">Privacy Policy</Link>
-        </footer>
-      </div>
+      </footer>
     </>
   )
 }

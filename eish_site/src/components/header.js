@@ -9,44 +9,30 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div class="topNav"> {/*Need to change from header to just a link with its own styling*/}
+    <div className="topNav">
+      {/*Need to change from header to just a link with its own styling*/}
       <Link
         to="/"
         style={{
-          fontSize: '2em',
+          fontSize: "2em",
         }}
-        className='navLink'
+        className="navLink"
       >
         {siteTitle}
       </Link>
-      <Link
-        to="/bio"
-        className='navLink'
-      >
+      <Link to="/bio/" className="navLink">
         About
       </Link>
-      <Link
-        to="/resources"
-        className='navLink'
-      >
+      <Link to="/resources/" className="navLink">
         Resources
       </Link>
-      <Link
-        to="/services"
-        className='navLink'
-      >
+      <Link to="/services/" className="navLink">
         Services
       </Link>
-      <Link
-        to="/rates"
-        className='navLink'
-      >
+      <Link to="/rates/" className="navLink">
         Rates
       </Link>
-      <Link
-        to="/book"
-        className='navLink'
-      >
+      <Link to="/book/" className="navLink">
         Book
       </Link>
     </div>
