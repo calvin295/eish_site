@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         }}
         className="navLink"
       >
-        {siteTitle}
+        <div id="title"> {siteTitle} </div>
       </Link>
       <Link to="/resources/" className="navLink">
         Resources
