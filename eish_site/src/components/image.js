@@ -13,13 +13,19 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
- //so you can put an input in here to query the appropriate image.
- //
+ //so you can put an input in here to query the appropriate image, I hope. 
+ //try this, if it works, pass a maxwidth as well.
+ //every time I need an image how do I make one? include the query as a const in the component..?
+ //can do old style images as well I suppose.
+
+ //not really sure at what point i need props/state in here lol.
+
+//
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      image: file(relativePath: { eq: "aleisia-kinesiologist.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -29,7 +35,19 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.image.childImageSharp.fluid} />
 }
 
 export default Image
+
+/*
+   query {
+      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid //stretches 
+          }
+        }
+      }
+    }
+*/

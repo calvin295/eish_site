@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      marginBottom: `0`,
     }}
   >
     <div className="topNav">
@@ -19,9 +19,6 @@ const Header = ({ siteTitle }) => (
         className="navLink"
       >
         {siteTitle}
-      </Link>
-      <Link to="/bio/" className="navLink">
-        About
       </Link>
       <Link to="/resources/" className="navLink">
         Resources

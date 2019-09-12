@@ -75,11 +75,62 @@ template {
 .navLink:hover {
   color: orange;
 }
+.hero {
+  display:block;
+  max-height: 720px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.heroText {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+#eishport {
+  flex: 1;
+  max-width: 300px;
+  margin: -100px 0px 1.45rem 50px;
+  border-radius: 25px;
+  box-shadow: 0px 2px, 4px rgba(0,0,0,0.18);
+}
+.port {
+  border-radius: 25px;
+  box-shadow: 0px 2px, 4px rgba(0,0,0,0.18);
+}
+#eishport h2 {
+  max-width:300px;
+  margin-left: 20px;
+  font-weight: 200;
+  color: rgba(1,1,1,0.5);
+}
+#eishport-text2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight:400;
+  font-family: sans-serif;
+}
+#eishcontainer {
+  display:flex;
+  background-color: rgba(1,1,1,0.05);
+  padding-left: 10px;
+  margin-bottom:20px;
+
+}
 .collapsibleList {
-  background:lightgrey;
+  background:rgba(1,1,1,0.05);
   text-align: center;
   width:100%;
 }
+/*TODO integrate FontAwesome in css.
 /*Targets the entire section just like the outer div.*/
 .Collapsible {
 }
@@ -327,7 +378,7 @@ h2 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
-  line-height: 1.1;
+  line-height: 1.3;
 }
 h3 {
   margin-left: 0;
@@ -690,9 +741,54 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-/* SMALLEST SCREEN */
-@media only screen and (max-width: 480px) {
+/* MEDIUM SCREENs */
+@media only screen and (max-width: 1144px) {
   html {
-    font-size: 100%;
+    font-size: 100%; 
   }
+  .hero {
+    display: block;
+  }
+  .heroText h1{
+    font-size: 1.5em;
+    max-height:200px;
+  }
+  #eishport {
+    max-width: 200px;
+    margin: -100px 0px 1.45rem 50px;
+  }
+  #eishport h2 {
+    max-width:300px;
+  }
+  #eishport-text2 {
+    padding-top: 30px;
+  }
+
+}
+/* SMALLEST SCREEN */
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 100%; 
+  }
+  .hero {
+    display: block;
+  }
+  .heroText h1 {
+    font-size: 1em;
+  }
+  #eishcontainer {
+  }
+  #eishport {
+    max-width: 100px;
+    margin: -50px 0px 1.45rem 10px;
+  }
+  #eishport h2 {
+    max-width:200px;
+    margin-left: 10px;
+
+  }
+  h2 {
+    font-size:1em;  
+  }
+
 }
