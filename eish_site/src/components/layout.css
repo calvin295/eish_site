@@ -88,16 +88,22 @@ template {
   left: 50%;
   transform: translate(-50%, -20%);
 }
+.belowHero {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+}
 #eishport {
   flex: 1;
   max-width: 300px;
   margin: -100px 0px 1.45rem 50px;
   border-radius: 25px;
-  box-shadow: 0px 2px, 4px rgba(0,0,0,0.18);
+  box-shadow: 0px 2px, 4px rgba(0,0,0,0.8);
 }
 .port {
   border-radius: 25px;
-  box-shadow: 0px 2px, 4px rgba(0,0,0,0.18);
+  box-shadow: 0px 2px, 4px rgba(0,0,0,0.8);
 }
 #eishport h2 {
   max-width:300px;
@@ -111,7 +117,7 @@ template {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 140px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 20px;

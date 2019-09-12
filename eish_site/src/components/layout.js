@@ -14,20 +14,9 @@ import Header from "./header"
 import "./layout.css"
 
 
-const heroImage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      image: file(relativePath: {eq: "yoga-hero.png"}) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  return <Img fluid={data.image.childImageSharp.fluid} />
-}
+/*
+
+*/
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -43,20 +32,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div class="hero">
-        {heroImage()}
-        <div class="heroText"><h1>Private training and kinesiotherapy sessions at your convenience, in pursuit of your goals, for your health.</h1></div>
-      </div>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `960px`,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
@@ -74,3 +50,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+
