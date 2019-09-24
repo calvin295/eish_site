@@ -11,9 +11,11 @@ import FAQ from "../components/faq"
 //so I want to add some kind of block to the right of both of those
 //either with absolute positioning or 
 //Certified Exercise Physiologist® with the Canadian Society for Exercise Physiology (CSEP)
+
+//Need a good metadescription for everything. use keywords you want to rank for, Declarative, active voice, call to action,
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Muscle Function Therapy" description=" " />
     <div class="hero">
       {heroImage()}
       <div class="heroText"><h1>Private training and kinesiotherapy sessions at your convenience, in pursuit of your goals, for your health.</h1></div>

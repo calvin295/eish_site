@@ -22,10 +22,11 @@ const FAQ = () => {
 			</div>
 			<div class="cTrig">
 				<Collapsible trigger="Benefit from Broad Therapeutic Experience">
-					<p>Your kinesiologist has multiple years of clinical experience with injury and stroke rehabilitation as well as functional movement training. Aleisia currently works as the lead kinseiologist at a multidisciplinary physician's office called Advanced Primary Care. Further, she is a certified exercise physiologist and comes from a competitive sports background. Read her bio to learn more.</p>
+					<p>Your kinesiologist has multiple years of clinical experience with injury and stroke rehabilitation as well as functional movement training. Aleisia currently works as the lead kinesiologist at a multidisciplinary physician's office called Advanced Primary Care. Further, she is a certified exercise physiologist and comes from a competitive sports background. Read her bio to learn more.</p>
 				</Collapsible>
 			</div>
 		</div>
+		
 	)
 }
 
