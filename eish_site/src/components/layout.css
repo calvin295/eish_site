@@ -59,6 +59,8 @@ template {
   padding: 1.45rem 1.0875rem;
 }
 .navLink {
+  padding-left: 4px;
+  padding-right: 4px;
   color: white;
   text-decoration: none;
   font-size: 1em;
@@ -768,6 +770,9 @@ pre tt:after {
   }
   .hero {
   }
+  .heroText {
+    margin-top: -100px;
+  }
   .heroText h1{
     font-size: 1.5em;
     max-height:200px;
@@ -794,6 +799,9 @@ pre tt:after {
   }
   .hero {
   }
+  .heroText {
+    margin-top: -100px;
+  }
   .heroText h1 {
     font-size: 1em;
   }
@@ -819,6 +827,6 @@ pre tt:after {
 /* SMALLEST SCREEN (phones) TODO*/
 @media only screen and (max-width: 480px) {
   .heroText {
-
+    margin-top: -100px;
   }
 }

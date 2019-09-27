@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <div className="topNav">
-      {/*Need to change from header to just a link with its own styling*/}
+      {/*nav links have space around*/}
       <Link
         to="/"
         style={{
@@ -24,10 +24,10 @@ const Header = ({ siteTitle }) => (
         Resources
       </Link>
       <Link to="/services/" className="navLink">
-        Services
+        Services  
       </Link>
       <Link to="/rates/" className="navLink">
-        Rates
+        Rates  
       </Link>
       <Link to="/book/" className="navLink">
         Book
