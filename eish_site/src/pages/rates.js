@@ -11,14 +11,18 @@ import Collapsible from "react-collapsible"
 const RatesPage = () => (
 	<Layout>
 		<SEO title="Rates"/>
-		<div class="belowHero">
+		<div id="below-port">
 			<div class="rateblurb">
 				<h2>
-					60 min- 60$ 
+					60 min- 60$
+				</h2>
+				<h2>
 					90 min-  85$
+				</h2>
+				<h3>
 					Packages: save 10$ per session when purchasing a minimum of 5 sessions or more at once 
 					All prices include GST 
-				</h2>
+				</h3>
 			</div>
 			<Collapsible trigger="Does my insurance cover your services?">
 				<p>Services are covered if you have a health and wellness spending account or coverage section for health and wellness under private providers.</p>

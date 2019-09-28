@@ -34,11 +34,13 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <footer>
-          © {new Date().getFullYear()}, Built with
+          <Link to="/privacy-policy/">Privacy Policy</Link>
+          <p></p>
+          © {new Date().getFullYear()}, Built by
+          {` `}
+          <a href="http://seandonachiue.github.io">SD Web Development</a> using
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-          <p></p>
-          <Link to="/privacy-policy/">Privacy Policy</Link>
       </footer>
     </>
   )

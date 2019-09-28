@@ -31,10 +31,12 @@ const IndexPage = () => (
           <p>Registered Kinesiologist with the Alberta Kinesiology Association</p>
         </div>
       </div>
-      <h2>What is Kinesiology? </h2>
-      <p>Simply put, kinesiology is the study of movement. Specializations can include anything under the umbrella of the anatomical, physiological and biomechanical relationships of movement in the human body.</p>
-      <h2>Services</h2>
-      <p>Chronic pain management • Improved Range of Motion and Balance • Managing Physical Limitations • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering individual passion for daily active living</p>
+      <div id="below-port">
+        <h2>What is Kinesiology?</h2>
+        <p>Simply put, kinesiology is the study of movement. Specializations can include anything under the umbrella of the anatomical, physiological and biomechanical relationships of movement in the human body.</p>
+        <h2>Therapy Services</h2>
+        <p>Chronic Pain Management • Improved Range of Motion and Balance • Managing Physical Limitations • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering Passion for Daily Active Living</p>
+      </div>
       <FAQ/>
     </div>
   </Layout>
