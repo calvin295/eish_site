@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import FAQ from "../components/faq"
+import Paper from "@material-ui/core/paper"
 //so to be good, you just need parallax scrolling, responsive splash images, and show/hide animations
 
 //so I want to add some kind of block to the right of both of those
@@ -31,13 +32,16 @@ const IndexPage = () => (
           <p>Registered Kinesiologist with the Alberta Kinesiology Association</p>
         </div>
       </div>
-      <div id="below-port">
-        <h2>What is Kinesiology?</h2>
-        <p>Simply put, kinesiology is the study of movement. Specializations can include anything under the umbrella of the anatomical, physiological and biomechanical relationships of movement in the human body.</p>
-        <h2>Therapy Services</h2>
-        <p>Chronic Pain Management • Improved Range of Motion and Balance • Managing Physical Limitations • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering Passion for Daily Active Living</p>
-      </div>
+      <Paper>
+        <p></p>
+        <div id="below-port">
+          <h2>What is Kinesiology?</h2>
+          <p>Simply put, kinesiology is the study of movement. Specializations can include anything under the umbrella of the anatomical, physiological and biomechanical relationships of movement in the human body. More practically, kinesiology utilizes scientific research to make assessments to aid in the enhancement of human performance, such as sport or work environments and to assist in the prevention or rehabilitation of injury, lifestyle diseases and other physiological conditions. </p>
+          <h2>Therapy Services</h2>
+          <p>Chronic Pain Management • Improved Range of Motion and Balance • Managing Physical Limitations • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering Passion for Daily Active Living</p>
+        </div>
       <FAQ/>
+      </Paper>
     </div>
   </Layout>
 )
