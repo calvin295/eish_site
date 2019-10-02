@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Paper from "@material-ui/core/Paper"
 import FullWidthTabs from "../components/fullwidthtabs"
 
 const ServicePage = () => (
@@ -13,6 +14,7 @@ const ServicePage = () => (
   			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 			  <SEO title="Services" />
 				<div id="services-container">
+					<Paper>
 				  <h1 id="services-head">About Services</h1>	
 					<h2>Personal Training for Functional Movement and Performance Fitness</h2>
 					<span> {/*not surew why this is a span elem*/}
@@ -22,6 +24,7 @@ const ServicePage = () => (
  							mobility day to day, and the list goes on.</p>
  					</span>
 					<FullWidthTabs />
+					</Paper>
 				</div>
 			</Layout>
 )

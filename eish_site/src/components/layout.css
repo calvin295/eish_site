@@ -58,7 +58,7 @@ template {
 #title {
 
 }
-.topNav {
+.topNav /*doesn't work properly on screens < 375 px*/{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import FAQ from "../components/faq"
-import Paper from "@material-ui/core/paper"
+import Paper from "@material-ui/core/Paper"
 //so to be good, you just need parallax scrolling, responsive splash images, and show/hide animations
 
 //so I want to add some kind of block to the right of both of those
