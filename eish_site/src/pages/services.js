@@ -13,17 +13,26 @@ const ServicePage = () => (
 			  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 			  <SEO title="Services" />
+			 
 				<div id="services-container">
-					<Paper>
-				  <h1 id="services-head">About Services</h1>	
-					<h2>Personal Training for Functional Movement and Performance Fitness</h2>
-					<span> {/*not surew why this is a span elem*/}
-						<h3>Why Exercise?</h3>
-						<p>Improve mood, regulate sleep, increase energy levels, resting metabolic rate for healthy weight 
- 							maintenance, decrease your chances of contracting life threatening diseases and suffering from chronic pain, improve
- 							mobility day to day, and the list goes on.</p>
- 					</span>
-					<FullWidthTabs />
+					
+				  <Paper>
+				  	<div id="paper">
+				  		<h1 id="services-head">About Services</h1>	
+							<h2>Personal Training for Functional Movement and Performance Fitness</h2>
+							<span> {/*not surew why this is a span elem*/}
+								<h3>Why Exercise?</h3>
+								<p>Improve mood, regulate sleep, increase energy levels, resting metabolic rate for healthy weight 
+ 								maintenance, decrease your chances of contracting life threatening diseases and suffering from chronic pain, improve
+ 								mobility day to day, and the list goes on.</p>
+ 							</span>
+ 						</div>
+ 					</Paper>
+
+ 					<Paper>
+ 						<div id="paper">
+							<FullWidthTabs />
+						</div>
 					</Paper>
 				</div>
 			</Layout>

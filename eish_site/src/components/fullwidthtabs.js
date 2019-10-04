@@ -21,7 +21,7 @@ function TabPanel(props) {
       aria-labelledby={`full-width-tab-${index}`}
       {...other}
     >
-      <Box p={3}>{children}</Box>
+      <Box p={3}>{children}</Box> {/*children here specifies html content inside the tabpanel*/}
     </Typography>
   )
 }
@@ -122,7 +122,7 @@ export default function FullWidthTabs() {
 					</div>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          <h2>House Call Physical Therapy Techniques</h2>
+          <h3>Pain Management & Injury Rehab</h3>
 					<div class="belowHero">
 						<Collapsible trigger="Trigger Point Therapy">
 							<p>Essentially, we are applying a localized pressure to the area that has increased tension. 

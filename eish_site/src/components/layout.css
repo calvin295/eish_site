@@ -60,6 +60,7 @@ template {
 }
 .topNav /*doesn't work properly on screens < 375 px*/{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1280px;
@@ -106,13 +107,60 @@ template {
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
 }
-#below-port {
+#paper {
+  max-width: 650px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-#below-port, #services-container {
+#below-port {
   padding-top: 20px;
   max-width:650px;
   margin-left:auto;
   margin-right: auto;
+}
+#services-container {
+  max-width:720px;
+  margin-left:auto;
+  margin-right: auto;
+}
+#contact-form {
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#contact-info {
+  display: block;
+}
+textarea {
+  resize: none;
+  width: 650px;
+  height: 250px;
+  border: none;
+  padding-top: 5px;
+  overflow: auto;
+}
+textarea::placeholder {
+  font-family: sans-serif;
+  color: darkslategrey;
+}
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 90%;
+  box-sizing: border-box;
+}
+input::placeholder {
+  font-family:sans-serif;
+  color: darkslategrey;
+}
+#contact-first-last {
+  display:inline-flex;
+  justify-content:space-between;
+}
+#phoneIn {
+  display: inline-flex;
 }
 #eishport {
   flex: 1;
@@ -155,8 +203,6 @@ template {
   background:rgba(1,1,1,0.05);
   font-family: sans-serif;
   width:100%;
-
-
 }
 /*TODO integrate FontAwesome in css.
 /*Targets the entire section just like the outer div.*/
@@ -176,6 +222,9 @@ template {
   font-size: 1.2em;
   background: midnightblue;
   color: white;
+}
+.Collapsible__trigger:hover {
+  background: navy;
 }
 .Collapsible__trigger:after {
   content: '\271A';
@@ -266,7 +315,6 @@ hr {
   overflow: visible;
 }
 button,
-input,
 optgroup,
 select,
 textarea {
@@ -277,8 +325,7 @@ optgroup {
   font-weight: 700;
 }
 
-button,
-input {
+button {
   overflow: visible;
 }
 button,
@@ -316,9 +363,6 @@ legend {
   max-width: 100%;
   padding: 0;
   white-space: normal;
-}
-textarea {
-  overflow: auto;
 }
 [type="checkbox"],
 [type="radio"] {
@@ -452,12 +496,12 @@ h4 {
 h5 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 0.5rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.5rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -818,11 +862,15 @@ pre tt:after {
   }
   .hero {
   }
+
   .heroText {
     margin-top: -100px;
   }
   .heroText h1 {
     font-size: 1em;
+  }
+  textarea {
+    width: 80vw;
   }
   #eishcontainer {
 
