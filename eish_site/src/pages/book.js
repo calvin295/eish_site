@@ -1,0 +1,65 @@
+import React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Paper from "@material-ui/core/Paper"
+
+const BookPage = () => {
+	return (
+		<Layout>
+			<div class="belowHero" id="book-container">
+				<form name="contact" id="contact-form" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" subject="Therapy Client Inquiry">
+				<input type="hidden" name="form-name" value="contact" />
+				<Paper style={{ marginTop: "15px", paddingTop: "10px", paddingBottom: "10px"}}>
+					<div id="services-container">
+						
+							<h5>Name *</h5>
+							<input
+								type="text"
+								name="firstName"
+								placeholder="First Name"
+								required
+							/>
+							<input
+								type="text"
+								name="lastName"
+								placeholder="Last Name"
+								required
+							/>
+							<h5>Phone *</h5>
+							<input
+								type="tel"
+								name="telephone"
+								placeholder="Phone Number"
+								required
+							/>
+							<h5>Email</h5>
+							<input
+								type="Email"
+								name="emailAddr"
+								placeholder="Email Address"
+							/>
+							
+						
+					</div>
+				</Paper>
+				<Paper style={{ marginTop: "15px", paddingTop: "10px", paddingBottom: "10px" }}>
+					<textarea
+						name="inquiry"
+						form="contact-form"
+						placeholder="Describe the reason for your appointment"
+					></textarea>
+				</Paper>
+				<button type="submit">Submit</button>
+				</form>
+			</div>
+		</Layout>
+	)
+}
+
+export default BookPage
+
+//some kind of drop down.
+//onsubmit send an email to aleisia about this.
