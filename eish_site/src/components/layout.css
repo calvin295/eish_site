@@ -14,6 +14,7 @@ main, footer{
 }
 main p {
   line-height: 1.5em;
+  text-align: justify;
 }
 footer {
   width: 100%;
@@ -136,7 +137,7 @@ template {
 textarea {
   resize: none;
   width: 650px;
-  height: 250px;
+  height: 225px;
   border: none;
   padding-top: 5px;
   overflow: auto;
@@ -149,6 +150,7 @@ input {
   margin-bottom: 10px;
   padding: 5px;
   width: 90%;
+  font-size: 1em;
   box-sizing: border-box;
 }
 input::placeholder {

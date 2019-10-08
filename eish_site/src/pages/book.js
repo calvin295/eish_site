@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Paper from "@material-ui/core/Paper"
+import Button from "@material-ui/core/Button"
 
 const BookPage = () => {
 	return (
@@ -52,7 +53,7 @@ const BookPage = () => {
 						placeholder="Describe the reason for your appointment"
 					></textarea>
 				</Paper>
-				<button type="submit">Submit</button>
+				<Button  type="submit" variant="contained" style={{marginTop:"15px"}}>Submit</Button>
 				</form>
 			</div>
 		</Layout>

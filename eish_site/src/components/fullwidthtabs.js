@@ -83,7 +83,6 @@ export default function FullWidthTabs() {
         <TabPanel value={value} index={0} dir={theme.direction}>
           <h3>Performance Fitness Training</h3>
 					<div id="sport-specific-div">
-						<h4>Target Sport-Specific Training</h4>
 						<ul id="sport-specific-list">
 							<li>Flexibility</li>
 							<li>Range of Motion</li>
