@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql, navigate, useEffect } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -7,45 +7,122 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import FAQ from "../components/faq"
 import Paper from "@material-ui/core/Paper"
-//so to be good, you just need parallax scrolling, responsive splash images, and show/hide animations
-
-//so I want to add some kind of block to the right of both of those
-//either with absolute positioning or 
-//Certified Exercise Physiologist® with the Canadian Society for Exercise Physiology (CSEP)
+//
 
 //Need a good metadescription for everything. use keywords you want to rank for, Declarative, active voice, call to action,
+//do the query once when the page loads.
+const imagequery = () => {
+  data = useStaticQuery(graphql`
+    query {
+      allImageSharp {
+        edges {
+          node {
+            fluid {
+              ...GatsbyImageSharpFluid
+              originalName
+            }
+          }
+        }
+      }
+    }
+  `)
+}
+
+var data
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Muscle Function Therapy" description=" " />
+    {imagequery()}
+    <SEO title="Kinesiotherapy" description=" " />
     <div class="hero">
-      {heroImage()}
-      <div class="heroText"><h1>Private training and kinesiotherapy sessions at your convenience, in pursuit of your goals, for your health.</h1></div>
+      {stretchImages("yoga-hero.png")}
+      <div class="heroText">
+        <h1>
+          Private training and kinesiotherapy sessions at your convenience, in
+          pursuit of your goals, for your health.
+        </h1>
+      </div>
     </div>
     <div class="belowHero">
-      <div id="eishcontainer"> {/* Makes a small left aligned div */}
+      <div id="eishcontainer">
+        {" "}
+        {/* Makes a small left aligned div */}
         <div id="eishport">
-          <Image className="port"/>
+          <Image className="port" />
           <h2> - Aleisia Arkley, BSc. Kinesiology, University of Calgary</h2>
         </div>
         <div id="eishport-text2">
-          <p>Certified Exercise Physiologist® with the Canadian Society for Exercise Physiology</p>
-          <p>Registered Kinesiologist with the Alberta Kinesiology Association</p>
+          <p>
+            Certified Exercise Physiologist® with the Canadian Society for
+            Exercise Physiology
+          </p>
+          <p>
+            Registered Kinesiologist with the Alberta Kinesiology Association
+          </p>
         </div>
       </div>
       <Paper>
         <p></p>
-        <div id="below-port">
+        {/*SPLIT THE TEXT BELOW INTO TWO DIVS*/}
+        <div class="below-port">
           <h2>What is Kinesiology?</h2>
-          <p>Simply put, kinesiology is the study of movement. Specializations can include anything under the umbrella of the anatomical, physiological and biomechanical relationships of movement in the human body. More practically, kinesiology utilizes scientific research to make assessments to aid in the enhancement of human performance, such as sport or work environments and to assist in the prevention or rehabilitation of injury, lifestyle diseases and other physiological conditions. </p>
-          <h2>Therapy Services</h2>
-          <p>Chronic Pain Management • Improved Range of Motion and Balance • Managing Physical Limitations • Concussion Assessments and Management • Managing Chronic Diseases (Cardiovascular, Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance • Core Conditioning and Strengthening • Resistance Training • Improved Quality of Movement and Technique • Fostering Passion for Daily Active Living</p>
+          <p>
+            Simply put, kinesiology is the study of movement. Specializations
+            can include anything under the umbrella of the anatomical,
+            physiological and biomechanical relationships of movement in the
+            human body. More practically, kinesiology utilizes scientific
+            research to make assessments to aid in the enhancement of human
+            performance, such as sport or work environments and to assist in the
+            prevention or rehabilitation of injury, lifestyle diseases and other
+            physiological conditions.{" "}
+          </p>
         </div>
-      <FAQ/>
+        <div class="trainingImage">
+          {stretchImages("joint-mobilization.jpg")}
+          {/*stretchImages("sports-massage.jpg")*/}
+        </div>
+        <div class="below-port">
+          <h3>Rehab Therapy Services</h3>
+          <div id="rehab-port">
+          <div id="left-hab">
+          {stretchImages("injury-free.png")}
+            
+          </div>
+          <div id="right-hab">
+          <p>
+              Chronic Pain Management • Improved Range of Motion and Balance •
+              Managing Physical Limitations • Concussion Assessments and
+              Management • Managing Chronic Diseases (Cardiovascular, Diabetes,
+              Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance
+              • Core Conditioning and Strengthening • Resistance Training •
+              Improved Quality of Movement and Technique • Fostering Passion for
+              Daily Active Living
+            </p>
+          </div>
+          </div>
+          </div>
+          <div class="below-port">
+          <h3>Personal Training & Assessment</h3>
+          <div id="train-port">
+            <div id="left-train">
+            <p>
+              Want to make a regular habit of exercise, but are having trouble motivating? No problem! Together we will improve your self efficacy by boosting your confidence in your ability to succeed. 
+Our aim will be to gradually increase your activity levels to make sure you are hitting the requirements to see the physiological health and mental wellness benefits of exercise. 
+            </p>
+            <p>
+              For performance and sport specific training, we know that all sports require specific components of fitness: speed, power, agility and coordination. We'll test these components specifically to establish your baselines, then design a well-rounded program to net results in those specific areas, focusing on proper technique and a mindful approach to training.
+            </p>
+            </div>
+            <div id="right-train">{stretchImages("hiit-silhouette.png")}</div>
+          </div>
+        </div>
       </Paper>
+
+      <FAQ />
     </div>
   </Layout>
 )
-
+/*
 const heroImage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -59,13 +136,32 @@ const heroImage = () => {
     }
   `)
   return <Img fluid={data.image.childImageSharp.fluid} />
+
+}
+*/
+/* Easy optimization, separate file structure into full width fluid images and fixed width.
+   Then
+   var data
+
+*/
+
+var stretchImages = imgName => {
+  var tempArr = data.allImageSharp.edges.filter(
+    edge => edge.node.fluid.originalName === imgName
+  )
+  return <Img fluid={tempArr.shift().node.fluid} />
 }
 
 export default IndexPage
 
-
-
 /*
+
+src
+              srcSet
+              base64
+              aspectRatio
+              originalImg
+              sizes     
   anotha one.
   slugline
   aleisia portrait. qualifications. right.

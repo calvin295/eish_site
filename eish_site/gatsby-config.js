@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
-    title: `Muscle Function Therapy`,
-    description: `SEO description goes here.`,
+    title: `Rehab in Motion`,
+    description: `Physical Rehab and Exercise Therapy service bringing personal, mobile sessions to you.`,
     author: `@seandonachiue`,
   },
   plugins: [
