@@ -36,9 +36,10 @@ const Layout = ({ children }) => {
       <footer>
           <Link to="/privacy-policy/">Privacy Policy</Link>
           <p></p>
+          <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
           © {new Date().getFullYear()}, Built by
           {` `}
-          <a href="http://seandonachiue.github.io">SD Web Development</a> using
+          <a href="http://seandonachiue.github.io">Sean Donachiue</a> using
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>

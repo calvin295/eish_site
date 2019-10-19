@@ -27,7 +27,6 @@ const imagequery = () => {
     }
   `)
 }
-
 var data
 
 const IndexPage = () => (
@@ -35,11 +34,11 @@ const IndexPage = () => (
     {imagequery()}
     <SEO title="Kinesiotherapy" description=" " />
     <div class="hero">
-      {stretchImages("yoga-hero.png")}
+      {stretchImages("yoga-hero-dark.png")}
       <div class="heroText">
         <h1>
-          Private training and kinesiotherapy sessions at your convenience, in
-          pursuit of your goals, for your health.
+          Kinesiotherapy and Personal Training sessions in pursuit of your goals,
+          for your health, at your convenience.
         </h1>
       </div>
     </div>
@@ -61,7 +60,7 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
-      <Paper>
+      <Paper style={{ marginBottom: "1.6em" }}>
         <p></p>
         {/*SPLIT THE TEXT BELOW INTO TWO DIVS*/}
         <div class="below-port">
@@ -77,6 +76,8 @@ const IndexPage = () => (
             physiological conditions.{" "}
           </p>
         </div>
+      </Paper>
+      <Paper style={{ marginBottom: "1.6em" }}>
         <div class="trainingImage">
           {stretchImages("joint-mobilization.jpg")}
           {/*stretchImages("sports-massage.jpg")*/}
@@ -84,36 +85,51 @@ const IndexPage = () => (
         <div class="below-port">
           <h3>Rehab Therapy Services</h3>
           <div id="rehab-port">
-          <div id="left-hab">
-          {stretchImages("injury-free.png")}
-            
+            <div id="left-hab">{stretchImages("injury-free.png")}
+              <Link to="/services" state={{index: 1}}>
+                Learn more
+              </Link>
+            </div>
+            <div id="right-hab">
+              <p>
+                Chronic Pain Management • Improved Range of Motion and Balance •
+                Managing Physical Limitations • Concussion Assessments and
+                Management • Managing Chronic Diseases (Cardiovascular,
+                Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight
+                Maintenance • Core Conditioning and Strengthening • Resistance
+                Training • Improved Quality of Movement and Technique •
+                Fostering Passion for Daily Active Living
+              </p>
+            </div>
           </div>
-          <div id="right-hab">
-          <p>
-              Chronic Pain Management • Improved Range of Motion and Balance •
-              Managing Physical Limitations • Concussion Assessments and
-              Management • Managing Chronic Diseases (Cardiovascular, Diabetes,
-              Osteoarthritis etc.) • Weight Loss and Healthy Weight Maintenance
-              • Core Conditioning and Strengthening • Resistance Training •
-              Improved Quality of Movement and Technique • Fostering Passion for
-              Daily Active Living
-            </p>
-          </div>
-          </div>
-          </div>
-          <div class="below-port">
+        </div>
+      </Paper>
+      <Paper style={{ marginBottom: "1.6em" }}>
+        <div class="below-port">
           <h3>Personal Training & Assessment</h3>
           <div id="train-port">
             <div id="left-train">
-            <p>
-              Want to make a regular habit of exercise, but are having trouble motivating? No problem! Together we will improve your self efficacy by boosting your confidence in your ability to succeed. 
-Our aim will be to gradually increase your activity levels to make sure you are hitting the requirements to see the physiological health and mental wellness benefits of exercise. 
-            </p>
-            <p>
-              For performance and sport specific training, we know that all sports require specific components of fitness: speed, power, agility and coordination. We'll test these components specifically to establish your baselines, then design a well-rounded program to net results in those specific areas, focusing on proper technique and a mindful approach to training.
-            </p>
+              <p>
+                Want to make a regular habit of exercise, but are having trouble
+                motivating? No problem! Together we will boost your confidence in your ability to succeed.
+                Our aim will be to gradually increase your activity levels to
+                make sure you are hitting the requirements to see the
+                physiological health and mental wellness benefits of exercise.
+              </p>
+              <p>
+                For performance and sport specific training, we know that all
+                sports require specific components of fitness: speed, power,
+                agility and coordination. We'll test these components
+                specifically to establish your baselines, then design a
+                well-rounded program to net results in those specific areas,
+                focusing on proper technique and a mindful approach to training.
+              </p>
             </div>
-            <div id="right-train">{stretchImages("hiit-silhouette.png")}</div>
+            <div id="right-train">{stretchImages("hiit-silhouette.png")}
+              <Link to="/services" state={{index: 2}}>
+                Learn more
+              </Link>
+            </div>
           </div>
         </div>
       </Paper>
