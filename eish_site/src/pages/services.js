@@ -5,8 +5,10 @@ import SEO from "../components/seo"
 import Paper from "@material-ui/core/Paper"
 import FullWidthTabs from "../components/fullwidthtabs"
 
-const ServicePage = ({location}) => (
-			<Layout>
+const ServicePage = ({location}) => {
+	if(location.state === null) 
+		location.state = {index : 0}
+			return (<Layout>
 			  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 			  <SEO title="Services" />
@@ -21,12 +23,12 @@ const ServicePage = ({location}) => (
 
  					<Paper>
  						<div id="paper">
-							<FullWidthTabs startIndex={this.location.state.index} />
+							<FullWidthTabs startIndex={location.state.index} />
 						</div>
 					</Paper>
 				</div>
-			</Layout>
-)
+			</Layout>)
+}
 
 export default ServicePage
 
