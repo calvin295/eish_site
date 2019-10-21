@@ -1,9 +1,6 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Paper from "@material-ui/core/Paper"
 import FullWidthTabs from "../components/fullwidthtabs"
@@ -24,7 +21,7 @@ const ServicePage = ({location}) => (
 
  					<Paper>
  						<div id="paper">
-							<FullWidthTabs startIndex={location.state.index} />
+							<FullWidthTabs startIndex={this.location.state.index} />
 						</div>
 					</Paper>
 				</div>
