@@ -6,7 +6,7 @@ import FullWidthTabs from "../components/fullwidthtabs"
 
 //absolute hack here. and it ddoesn't work alas. 
 const ServicePage = ({location}) => {
-	if(window !== 'undefined') {
+	if(typeof window !== 'undefined') {
 		if(location.state === null && {location}.toString() === "[object Object]") {
 					location = {state: {
 						index: 0
@@ -28,7 +28,7 @@ const ServicePage = ({location}) => {
 
  					<Paper>
  						<div id="paper">
-							<FullWidthTabs startIndex={location.state !== null && location.state !== 'undefined' ? location.state.index : 0} />
+							<FullWidthTabs startIndex={location.state !== null && typeof location.state !== 'undefined' ? location.state.index : 0} />
 						</div>
 					</Paper>
 				</div>
