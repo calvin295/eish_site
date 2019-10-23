@@ -1,14 +1,17 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Paper from "@material-ui/core/Paper"
 import FullWidthTabs from "../components/fullwidthtabs"
 
+//absolute hack here. and it ddoesn't work alas. 
 const ServicePage = ({location}) => {
-	if(location.state === null) 
-		location.state = {index : 0}
-			return (<Layout>
+	if(location.state === null && {location}.toString() === "[object Object]") {
+		location = {state: {
+			index: 0
+		}}
+	}
+	return (<Layout>
 			  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 			  <SEO title="Services" />
@@ -28,9 +31,18 @@ const ServicePage = ({location}) => {
 					</Paper>
 				</div>
 			</Layout>)
-}
+} 
 
 export default ServicePage
+
+//Set location.state.index = 0 if null
+/*	React.useEffect(() => {
+			if(location.state === null) {
+				location.state = {index: 0}
+			}
+		}, [])
+*/
+//
 
 /*
 About Services 
