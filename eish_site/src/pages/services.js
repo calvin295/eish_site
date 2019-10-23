@@ -6,14 +6,13 @@ import FullWidthTabs from "../components/fullwidthtabs"
 
 //absolute hack here. and it ddoesn't work alas. 
 const ServicePage = ({location}) => {
-
-	/*
-	if(location.state === null && {location}.toString() === "[object Object]") {
-				location = {state: {
-					index: 0
+	if(window !== 'undefined') {
+		if(location.state === null && {location}.toString() === "[object Object]") {
+					location = {state: {
+						index: 0
 				}}
 			}
-	*/
+	}
 	return (<Layout>
 			  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
