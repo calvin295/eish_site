@@ -42,9 +42,9 @@ const Header = ({ siteTitle }) => (
         </Link>
         <div id="logo"><Link to="/">{showLogo()}</Link></div>
       <div className="link-wrapper">
-      <Link to="/resources/" className="navLink" id="marginUp20" activeStyle={{color: "orange"}}>
+      {/*<Link to="/resources/" className="navLink" id="marginUp20" activeStyle={{color: "orange"}}>
         Resources
-      </Link>
+      </Link>*/}
       <Link to="/services/" className="navLink" id="marginUp20" state={{index:0}} activeStyle={{color: "orange"}}>
         Services
       </Link>
