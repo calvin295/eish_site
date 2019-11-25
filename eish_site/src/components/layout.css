@@ -285,19 +285,19 @@ input::placeholder {
 }
 
 #dollar {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight:400;
 }
 #bold {
   font-variant: bold;
 }
 #amount {
-  font-size: 2rem;
-  font-weight:300;
+  font-size: 2.2rem;
+  font-weight:400;
 }
 
 #per-hour {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight:500;
 }
 
@@ -306,6 +306,7 @@ input::placeholder {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration-skip-ink: auto;
 }
 a:active,
 a:hover {
@@ -890,7 +891,7 @@ pre tt:after {
   .hero {
   }
   .heroText {
-    margin-top: -120px;
+    margin-top: -80px;
   }
   .heroText h1{
     font-size: 1.5em;
@@ -923,7 +924,7 @@ pre tt:after {
   }
 
   .heroText {
-    margin-top: -120px;
+    margin-top: -80px;
   }
   .heroText h1 {
     font-size: 1em;
@@ -979,15 +980,17 @@ pre tt:after {
 /* SMALLEST SCREEN (phones) TODO*/
 @media only screen and (max-width: 480px) {
   .heroText {
-    margin-top: -100px;
+    margin-top: -80px;
   }
   h2, h3 {
     font-size: 1em;
   }
 }
-/*pesky horizontal mobile phone media query.*/
-@media only screen and (max-height: 600px) {
+@media only screen and (max-width: 350px) {
   .heroText {
-    margin-top: 70px;
+    margin-top: -80px;
+  }
+  h2, h3 {
+    font-size: 0.8em;
   }
 }
