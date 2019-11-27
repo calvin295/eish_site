@@ -3,8 +3,25 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Paper from "@material-ui/core/Paper"
 import FullWidthTabs from "../components/fullwidthtabs"
+import Img from "gatsby-image"
+import {useStaticQuery} from "gatsby"
 
-//absolute hack here. and it ddoesn't work alas. 
+const Image = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "peace-bridge.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return <Img fluid={data.image.childImageSharp.fluid} />
+}
+
 const ServicePage = ({location}) => {
 	if(typeof window !== 'undefined') {
 		if(location.state === null && {location}.toString() === "[object Object]") {
@@ -17,15 +34,13 @@ const ServicePage = ({location}) => {
 			  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
   			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 			  <SEO title="Services" />
-			 
+			  <div id="service-hero">
+			 		{Image()}
+			 		<div class="heroText">
+			 			<h1><span id="highlight">About Services</span></h1>
+			 		</div>
+				 </div>
 				<div id="services-container">
-					
-				  <Paper>
-				  	<div id="paper">
-				  		<h1 id="services-head">About Services</h1>	
- 						</div>
- 					</Paper>
-
  					<Paper>
  						<div id="paper">
 							<FullWidthTabs startIndex={location.state !== null && typeof location.state !== 'undefined' ? location.state.index : 0} />

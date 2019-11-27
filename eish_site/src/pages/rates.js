@@ -16,16 +16,18 @@ const RatesPage = () => (
 				<h3>
 					<sup id="dollar">$</sup>
 					<span id="amount">60</span>
-					<span id="per-hour"> / hour, </span>
+					<span id="per-hour"> / 60 minutes</span>
+				</h3>
+				<h3>
 					<sup id="dollar">$</sup>
-					<span id="amount">50</span>
-					<span id="per-hour"> / hour thereafter</span>
+					<span id="amount">85</span>
+					<span id="per-hour"> / 90 minutes</span>
 				</h3>
 				<h3>
 					<sup id="dollar">$</sup>
 					<span id="amount">10 </span>
 					<span id="per-hour">
-						off per session when purchasing five sessions at once.
+						off per session when <br/> purchasing five or more sessions at once.
 					</span>
 				</h3>
 				<p>Prices include GST</p>

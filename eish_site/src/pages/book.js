@@ -1,6 +1,4 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,7 +12,7 @@ const BookPage = () => {
 				<form name="contact" id="contact-form" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" subject="Therapy Client Inquiry">
 				<input type="hidden" name="form-name" value="contact" />
 				<Paper style={{ marginTop: "15px", paddingTop: "10px", paddingBottom: "10px"}}>
-					<div id="services-container">
+					<div id="book-container">
 						
 							<h5>Name *</h5>
 							<input

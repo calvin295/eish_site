@@ -47,7 +47,7 @@ const useStyles = makeStyles(theme => ({
 	},
 }))
 
-export default function FullWidthTabs({startIndex}) {
+export default function FullWidthTabs({ startIndex }) {
 	const classes = useStyles()
 	const theme = useTheme()
 	const [value, setValue] = React.useState(startIndex)
@@ -140,10 +140,10 @@ export default function FullWidthTabs({startIndex}) {
 				<TabPanel value={value} index={1} dir={theme.direction}>
 					<h3>Pain Management & Injury Rehab</h3>
 					<div class="belowHero">
-						<h3>Move Pain Free</h3>
 						<p>
-							We'll make a comprehensive assessment of how you are moving will
-							help us identify what is causing the pain.
+							By making a comprehensive assessment of how you are moving, we'll
+							identify what is causing you pain or restricting your range of
+							motion.
 						</p>
 						<p>
 							Pain often comes from a biomechanical imbalance in the body: when
@@ -156,6 +156,24 @@ export default function FullWidthTabs({startIndex}) {
 							exercises into your daily routine to help you accomplish your
 							goals.{" "}
 						</p>
+						<h3>Pain Management Therapies</h3>
+						<Collapsible trigger="Assisted Range Of Motion Improvement">
+							<p>
+								We can often improve range of motion by assisting the movement
+								of the joint and applying a force that is opposite to the
+								direction the muscle and joint are used to moving, this inhibits
+								the muscle’s natural protective mechanism to resist a stretch.
+							</p>
+						</Collapsible>
+						<Collapsible trigger="Muscle Activation">
+							<p>
+								Pain is often from biomechanical errors that our bodies
+								gradually develop. While release of the overworked muscles is
+								important, activation of the weak areas are equally as important
+								to improve movement patterns and reduce further pain and
+								stiffness.
+							</p>
+						</Collapsible>
 						<Collapsible trigger="Trigger Point Therapy">
 							<p>
 								Essentially, we are applying a localized pressure to the area
@@ -185,51 +203,29 @@ export default function FullWidthTabs({startIndex}) {
 								by increasing circulation in the area.
 							</p>
 						</Collapsible>
-						<Collapsible trigger="Assisted Range Of Motion Improvement">
-							<p>
-								We can often improve range of motion by assisting the movement
-								of the joint and applying a force that is opposite to the
-								direction the muscle and joint are used to moving, this inhibits
-								the muscle’s natural protective mechanism to resist a stretch.
-							</p>
-						</Collapsible>
-						<Collapsible trigger="Muscle Activation">
-							<p>
-								Pain is often from biomechanical errors that our bodies
-								gradually develop. While release of the overworked muscles is
-								important, activation of the weak areas are equally as important
-								to improve movement patterns and reduce further pain and
-								stiffness.
-							</p>
-						</Collapsible>
 					</div>
 				</TabPanel>
 				<TabPanel value={value} index={2} dir={theme.direction}>
-					<h3>Performance Fitness Training</h3>
+					<h3>Fitness Training</h3>
 					<div id="sport-specific-div">
-						<ul id="sport-specific-list">
-							<li>Flexibility</li>
-							<li>Range of Motion</li>
-							<li>Strength</li>
-							<li>Endurance</li>
-							<li>Aerobic Capacity</li>
-						</ul>
 						<p>
-							We can specifically test these attributes and design a
-							well-rounded, progressive training program to meet your
-							performance goals.
+							We can specifically test attributes like range of motion,
+							endurance, strength, flexibility, and aerobic capacity, and design
+							a well-rounded, progressive training program to meet your
+							performance goals in these areas.
 						</p>
 						<p>
-							Almost all sports require specific components of fitness: speed,
-							power, agility and coordination. We can integrate cross training
-							with HIIT style workouts to improve speed, power, agility and
-							coordination.
+							All sports demand very specific components of our fitness: speed,
+							power, agility and coordination. To improve these, We can
+							integrate cross training with HIIT style workouts, as well as
+							design programs with high specificity to whatever sport you are
+							training for.
 						</p>
 						<p>
 							Sports also require multiple intervals of low to high intensity
 							training for your cardiovascular fitness, and depending on the
 							interval, you are using a different energy system for your muscles
-							to work. We will integrate interval training to challenge all the
+							to work. We will integrate interval training to challenge all energy
 							systems.
 						</p>
 						<p>

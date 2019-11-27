@@ -37,8 +37,8 @@ const IndexPage = () => (
       {stretchImages("yoga-hero-dark.png")}
       <div class="heroText">
         <h1>
-          Kinesiotherapy and Personal Training sessions in pursuit of your goals,
-          for your health, at your convenience.
+          Kinesiotherapy and Personal Training sessions in pursuit of your
+          goals, for your health, at your convenience.
         </h1>
       </div>
     </div>
@@ -85,8 +85,9 @@ const IndexPage = () => (
         <div class="below-port">
           <h3>Rehab Therapy Services</h3>
           <div id="rehab-port">
-            <div id="left-hab">{stretchImages("injury-free.png")}
-              <Link to="/services" state={{index: 1}}>
+            <div id="left-hab">
+              {stretchImages("injury-free.png")}
+              <Link to="/services" state={{ index: 1 }}>
                 Learn more
               </Link>
             </div>
@@ -100,6 +101,14 @@ const IndexPage = () => (
                 Training • Improved Quality of Movement and Technique •
                 Fostering Passion for Daily Active Living
               </p>
+              <p>
+                Whether your goals are for performance or pain management, We
+                perform a functional movement assessment. Often, MOBILITY is as
+                important as strength with regard to your performance goals.
+                Especially if you have previous injuries, pain, or play a sport
+                requiring repetitive movement and joint stress. TECHNIQUE IS KEY
+                to optimal performance and staying pain free alike.
+              </p>
             </div>
           </div>
         </div>
@@ -111,10 +120,11 @@ const IndexPage = () => (
             <div id="left-train">
               <p>
                 Want to make a regular habit of exercise, but are having trouble
-                motivating? No problem! Together we will boost your confidence in your ability to succeed.
-                Our aim will be to gradually increase your activity levels to
-                make sure you are hitting the requirements to see the
-                physiological health and mental wellness benefits of exercise.
+                motivating? No problem! Together we will boost your confidence
+                in your ability to succeed. Our aim will be to gradually
+                increase your activity levels to make sure you are hitting the
+                requirements to see the physiological health and mental wellness
+                benefits of exercise.
               </p>
               <p>
                 For performance and sport specific training, we know that all
@@ -125,8 +135,9 @@ const IndexPage = () => (
                 focusing on proper technique and a mindful approach to training.
               </p>
             </div>
-            <div id="right-train">{stretchImages("hiit-silhouette.png")}
-              <Link to="/services" state={{index: 2}}>
+            <div id="right-train">
+              {stretchImages("hiit-silhouette.png")}
+              <Link to="/services" state={{ index: 2 }}>
                 Learn more
               </Link>
             </div>

@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: `Rehab in Motion`,
-    description: `Physical Rehab and Exercise Therapy service bringing personal, mobile sessions to you.`,
+    description: `Physical Rehab and Exercise Therapy service bringing therapeutic care to you. Book an appointment with your kinesio therapist today.`,
     author: `@seandonachiue`,
   },
   plugins: [
@@ -22,10 +22,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#191970`,
+        theme_color: `#191970`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
