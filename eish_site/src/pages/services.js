@@ -37,13 +37,15 @@ const ServicePage = ({location}) => {
 			  <div id="service-hero">
 			 		{Image()}
 			 		<div class="heroText">
-			 			<h1><span id="highlight">About Services</span></h1>
+			 			<h1><span id="highlight">Services</span></h1>
 			 		</div>
 				 </div>
 				<div id="services-container">
  					<Paper>
- 						<div id="paper">
+ 						<div id="paper" class="tab-container">
+ 						{/* can put an image before this. or another swipeable tabs with hidden muiroot element that gets state from thia one?*/
 							<FullWidthTabs startIndex={location.state !== null && typeof location.state !== 'undefined' ? location.state.index : 0} />
+ 						}
 						</div>
 					</Paper>
 				</div>

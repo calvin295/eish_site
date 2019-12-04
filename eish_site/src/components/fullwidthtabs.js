@@ -83,7 +83,7 @@ export default function FullWidthTabs({ startIndex }) {
 				onChangeIndex={handleChangeIndex}
 			>
 				<TabPanel value={value} index={0} dir={theme.direction}>
-					<div>
+					<div class="inner-tab">
 						<h3>Build Motivation to Exercise</h3>
 						<p>
 							Despite the countless benefits of exercise, the tricky part is

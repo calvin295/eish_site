@@ -34,36 +34,36 @@ const IndexPage = () => (
     {imagequery()}
     <SEO title="Kinesiotherapy" description=" " />
     <div class="hero">
-      {stretchImages("yoga-hero-dark.png")}
-      <div class="heroText">
+      {/*stretchImages("yoga-hero-dark.png")*/}
+    </div>
+    <div class="heroText">
         <h1>
           Kinesiotherapy and Personal Training sessions in pursuit of your
           goals, for your health, at your convenience.
         </h1>
       </div>
-    </div>
     <div class="belowHero">
       <div id="eishcontainer">
         {" "}
         {/* Makes a small left aligned div */}
         <div id="eishport">
-          <Image className="port" />
-          <h2> - Aleisia Arkley, BSc. Kinesiology, University of Calgary</h2>
+          {stretchImages("aleisia-kinesiologist.png")}
+          <h2> - Aleisia Arkley, <br/>BSc. Kinesiology, <br/>University of Calgary</h2>
         </div>
         <div id="eishport-text2">
-          <p>
+          <span id="highlight-1"><p>
             Certified Exercise Physiologist® with the Canadian Society for
             Exercise Physiology
           </p>
           <p>
             Registered Kinesiologist with the Alberta Kinesiology Association
-          </p>
+          </p></span>
         </div>
       </div>
-      <Paper style={{ marginBottom: "1.6em" }}>
-        <p></p>
-        {/*SPLIT THE TEXT BELOW INTO TWO DIVS*/}
-        <div class="below-port">
+      <Paper  elevation="12" classes={{root: "below-port"}} id="marginUp" style={{ marginBottom: "1.6em" }}>
+        <br />
+        {/*make paper skinnier*/}
+        <div class="below-port" id="marginUp">
           <h2>What is Kinesiology?</h2>
           <p>
             Simply put, kinesiology is the study of movement. Specializations
@@ -83,13 +83,10 @@ const IndexPage = () => (
           {/*stretchImages("sports-massage.jpg")*/}
         </div>
         <div class="below-port">
-          <h3>Rehab Therapy Services</h3>
+          <Link to="/services/#top" className="bodyLink" state={{ index: 1 }}><h3>Rehab Therapy Services</h3></Link>
           <div id="rehab-port">
             <div id="left-hab">
               {stretchImages("injury-free.png")}
-              <Link to="/services" state={{ index: 1 }}>
-                Learn more
-              </Link>
             </div>
             <div id="right-hab">
               <p>
@@ -113,9 +110,9 @@ const IndexPage = () => (
           </div>
         </div>
       </Paper>
-      <Paper style={{ marginBottom: "1.6em" }}>
+      <Paper elevation="4"style={{ marginBottom: "1.6em" }}>
         <div class="below-port">
-          <h3>Personal Training & Assessment</h3>
+          <Link to="/services/#top" className="bodyLink" state={{ index: 2 }}><h3>Personal Training & Assessment</h3></Link>
           <div id="train-port">
             <div id="left-train">
               <p>
@@ -137,9 +134,6 @@ const IndexPage = () => (
             </div>
             <div id="right-train">
               {stretchImages("hiit-silhouette.png")}
-              <Link to="/services" state={{ index: 2 }}>
-                Learn more
-              </Link>
             </div>
           </div>
         </div>

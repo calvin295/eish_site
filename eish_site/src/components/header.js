@@ -19,11 +19,7 @@ const showLogo = () => {
 }
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `midnightblue`,
-      marginBottom: `0`,
-    }}
+  <header id="top"
   >
       {/*nav links have space around*/}
     
@@ -45,13 +41,13 @@ const Header = ({ siteTitle }) => (
       {/*<Link to="/resources/" className="navLink" id="marginUp20" activeStyle={{color: "orange"}}>
         Resources
       </Link>*/}
-      <Link to="/services/" className="navLink" id="marginUp20" state={{index:0}} activeStyle={{color: "orange"}}>
+      <Link to="/services/" className="navLink" id="marginUp20" state={{index:0}} activeStyle={{color: "#F28C48"}}>
         Services
       </Link>
-      <Link to="/rates/" className="navLink" id="marginUp20" activeStyle={{color: "orange"}}>
+      <Link to="/rates/" className="navLink" id="marginUp20" activeStyle={{color: "#F28C48"}}>
         Rates
       </Link>
-      <Link to="/book/" className="navLink" id="marginUp20" activeStyle={{color: "orange"}}>
+      <Link to="/book/" className="navLink" id="marginUp20" activeStyle={{color: "#F28C48"}}>
         Book
       </Link>
       </div>

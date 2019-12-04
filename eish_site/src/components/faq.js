@@ -1,5 +1,6 @@
 import React from "react"
 import Collapsible from "react-collapsible"
+import Paper from "@material-ui/core/Paper"
 //state visible true/false I guess? Maybe not.
 //kind of garbage but its ok.
 const FAQ = () => {
