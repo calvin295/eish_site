@@ -5,7 +5,6 @@ module.exports = {
     title: `Rehab in Motion`,
     description: `Physical Rehab and Exercise Therapy service bringing therapeutic care to you. Book an appointment with your kinesio therapist today.`,
     author: `@seandonachiue`,
-    'google-site-verification':`dB-zq9PR_jCCa0ov28RtgveCy1zDE4sVFjelxmigIfU`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
