@@ -9,8 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:#EEEEEE;
-  height: 100vh;
+  height: 100%;
   perspective: 1px;
+  -moz-
   transform-style: preserve-3d;
   overflow-x: hidden;
 }
