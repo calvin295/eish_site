@@ -10,7 +10,8 @@ import Collapsible from "react-collapsible"
 
 const RatesPage = () => (
 	<Layout>
-		<SEO title="Rates" />
+		<SEO title="Calgary Kinesiotherapy | Rehab in Motion | Rates" description="House-call injury therapy, sports medicine, training, and wellness specialist starting at 
+$60 / session." />
 		<div class="below-port">
 			<div class="rateblurb">
 				<h3>

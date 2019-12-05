@@ -1,6 +1,7 @@
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
+    siteUrl: `https://rehabinmotion.netlify.com`,
     title: `Rehab in Motion`,
     description: `Physical Rehab and Exercise Therapy service bringing therapeutic care to you. Book an appointment with your kinesio therapist today.`,
     author: `@seandonachiue`,
@@ -16,6 +17,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+       resolve: `gatsby-plugin-sitemap`,
+       options: {
+          exclude: [`/google3641cb629fe6b470.html`],
+       },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

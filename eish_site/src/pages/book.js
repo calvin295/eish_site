@@ -8,6 +8,8 @@ import Button from "@material-ui/core/Button"
 const BookPage = () => {
 	return (
 		<Layout>
+			<SEO title="Calgary Based | Rehab in Motion | Book Appointment" description="Improve your health this year! take advantage of our injury rehab, prevention, and injury 
+recovery strategies, personal training, and more today!"/>
 			<div class="belowHero" id="book-container">
 				<form name="contact" id="contact-form" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" subject="Therapy Client Inquiry">
 				<input type="hidden" name="form-name" value="contact" />

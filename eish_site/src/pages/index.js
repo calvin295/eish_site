@@ -32,7 +32,8 @@ var data
 const IndexPage = () => (
   <Layout>
     {imagequery()}
-    <SEO title="Kinesiotherapy" description=" " />
+    <SEO title="Rehab in Motion | Calgary-based Kinesiotherapy | " description="Injury Rehab and Exercise Therapy, bringing treatment and recovery to you. 
+Get in touch to share about your injury or fitness goals." />
     <div class="hero">
       {/*stretchImages("yoga-hero-dark.png")*/}
     </div>

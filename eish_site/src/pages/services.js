@@ -31,9 +31,8 @@ const ServicePage = ({location}) => {
 			}
 	}
 	return (<Layout>
-			  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-  			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-			  <SEO title="Services" />
+			  <SEO title="Injury Recovery | Rehab in Motion | Personal Training" description="Therapy for joint, muscle, and back pain including massage, trigger point therapy,
+Personal Training, improved range of motion, strength, and wellness."/>
 			  <div id="service-hero">
 			 		{Image()}
 			 		<div class="heroText">
