@@ -41,13 +41,16 @@ const Header = ({ siteTitle }) => (
       {/*<Link to="/resources/" className="navLink" id="marginUp20" activeStyle={{color: "orange"}}>
         Resources
       </Link>*/}
-      <Link to="/services/" className="navLink" id="marginUp20" state={{index:0}} activeStyle={{color: "#F28C48"}}>
+      <Link to="/services/" className="navLink" id="marginUp20" state={{index:0}} activeStyle={{color: "#E39774"}}>
         Services
       </Link>
-      <Link to="/rates/" className="navLink" id="marginUp20" activeStyle={{color: "#F28C48"}}>
+      <Link to="/resources/" className="navLink" id="marginUp20" activeStyle={{color: "#E39774"}}>
+        Resources
+      </Link>
+      <Link to="/rates/" className="navLink" id="marginUp20" activeStyle={{color: "#E39774"}}>
         Rates
       </Link>
-      <Link to="/book/" className="navLink" id="marginUp20" activeStyle={{color: "#F28C48"}}>
+      <Link to="/book/" className="navLink" id="marginUp20" activeStyle={{color: "#E39774"}}>
         Book
       </Link>
       </div>

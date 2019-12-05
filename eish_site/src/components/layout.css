@@ -28,9 +28,15 @@ footer {
   margin-bottom: 10px;
   font-size: 12px;
 }
-
+@font-face {
+  font-family: "eras";
+  src: url("../ERASDEMI.ttf") format('truetype');
+}
+#top {
+  background: rgb(2,0,36);
+  background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(11,79,108,1) 55%, rgba(43,46,91,1) 100%);
+ }
 header {
-  background-color: midnightblue;
   margin-bottom:0;
   position: relative;
   top:0;
@@ -71,7 +77,9 @@ template {
   display: none;
 }
 #title {
-  margin-top: 10px;
+  margin-top: 20px;
+  font-style: normal;
+  font-family: 'eras', sans-serif;
 }
 .topNav /*doesn't work properly on screens < 375 px*/{
   display: flex;
@@ -96,9 +104,9 @@ template {
   color: white;
   text-decoration: none;
   font-size: 1.4em;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto-Condensed', sans-serif;
   font-weight: bold;
+  font-style: italic;
   text-rendering: optimizeLegibility;
     /* Multiple Browser Support */
   -o-transition:.5s;
@@ -159,9 +167,10 @@ template {
   perspective: 1px;
 }
 #service-hero {
-  max-width: 960px;
+  max-width: 820px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 #services-container {
   max-width:820px;
@@ -176,7 +185,6 @@ template {
 }
 .bodyLink {
   color: #6558A3;
-  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
@@ -197,16 +205,14 @@ template {
 #highlight {
   color: white;
   border-radius: 5px;
-  background-color: rgba(50, 50, 128, .7);
-  box-shadow: 5px 5px 2px 1px rgba(200, 0, 0, .4);
-  font-family: 'Roboto', sans-serif;
+  background-color: rgba(56, 112, 128, .7);
+  box-shadow: 5px 5px 2px 1px rgba(227, 151, 116, .4);
   font-weight: 400;
   font-size: 2.2rem;
 }
 #highlight-1 {
   border-radius: 5px;
-  background-color: rgba(200, 200, 200, .7);
-  font-family: 'Roboto', sans-serif;
+  background-color: rgba(200, 200, 200, .6);
   font-weight: 400;
 }
 #contact-info {
@@ -288,6 +294,23 @@ input::placeholder {
   font-weight:400;
   font-family: sans-serif;
 }
+.resources h1 {
+  font-family: 'Roboto', sans-serif;
+}
+.resources h4 {
+  font-family: 'Roboto-Slab', serif;
+  font-size: 1.6rem;
+  text-align: left !important;
+}
+.resources h5 {
+  font-family: 'Roboto-Slab', serif;
+  font-size: 1.4rem;
+  text-align: left !important;
+}
+.resources p {
+  font-family: 'Roboto',  sans-serif;
+  text-align: left !important;
+}
 #paper {
   max-width: 650px;
   margin-left:auto;
@@ -339,13 +362,9 @@ input::placeholder {
   font-family: sans-serif;
   width:100%;
 }
-.Collapsible {
-}
-
 .Collapsible__trigger {
   display: block;
-  font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Roboto', sans-serif;
   font-weight: 400;
   text-decoration: none;
   text-align: left;
@@ -353,11 +372,11 @@ input::placeholder {
   border: 1px solid white;
   padding: 30px;
   font-size: 1.2em;
-  background: midnightblue;
+  background: #382A7F;
   color: white;
 }
 .Collapsible__trigger:hover {
-  background: navy;
+  background: midnightblue;
 }
 .Collapsible__trigger:after {
   content: '\271A';
@@ -586,8 +605,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -619,7 +637,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: '-apple-system, Roboto', sans-serif;
+  font-family: 'eras', sans-serif;
   font-weight: bolder;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
