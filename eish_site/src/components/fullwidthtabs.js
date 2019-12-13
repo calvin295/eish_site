@@ -84,7 +84,7 @@ export default function FullWidthTabs({ startIndex }) {
 			>
 				<TabPanel value={value} index={0} dir={theme.direction}>
 					<div class="inner-tab">
-						<h3>Build Motivation to Exercise</h3>
+						<h3>Get Motivated</h3>
 						<p>
 							Despite the countless benefits of exercise, the tricky part is
 							always staying consistent with an achievable plan that keeps you
@@ -138,25 +138,24 @@ export default function FullWidthTabs({ startIndex }) {
 					</div>
 				</TabPanel>
 				<TabPanel value={value} index={1} dir={theme.direction}>
-					<h3>Pain Management & Injury Rehab</h3>
+					<h3>Rehab Process</h3>
 					<div class="belowHero">
 						<p>
-							By making a comprehensive assessment of how you are moving, we'll
-							identify what is causing you pain or restricting your range of
-							motion.
-						</p>
-						<p>
-							Pain often comes from a biomechanical imbalance in the body: when
-							segments of the joints and muscles are moving out of alignment, it
-							can build tension in some muscles and the brains neurological
-							system.
-						</p>
-						<p>
-							We can start with a therapeutic approach, building functional
-							exercises into your daily routine to help you accomplish your
-							goals.{" "}
+							Following our comprehensive movement assessment, we'll
+							identify what is causing you pain or restricting your range of motion.
+							<br />
+							<br />
+							For a therapist, the goal is often two-fold: relief, and prevention.
+							We will use targetted treatments for pain or tension initially. Over time,
+							strengthening imbalanced muscles and teasing out mobility from the joints
+							can offer more permanent relief and prevent further injury. 
 						</p>
 						<h3>Pain Management Therapies</h3>
+
+						<p>
+							All techniques offered are in use in certified clinical
+							practice, and are backed by peer-reviewed research.
+						</p>
 						<Collapsible trigger="Assisted Range Of Motion Improvement">
 							<p>
 								We can often improve range of motion by assisting the movement
@@ -225,8 +224,8 @@ export default function FullWidthTabs({ startIndex }) {
 							Sports also require multiple intervals of low to high intensity
 							training for your cardiovascular fitness, and depending on the
 							interval, you are using a different energy system for your muscles
-							to work. We will integrate interval training to challenge all energy
-							systems.
+							to work. We will integrate interval training to challenge all
+							energy systems.
 						</p>
 						<p>
 							We will focus on improving your anaerobic lactate threshold which

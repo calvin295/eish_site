@@ -7,6 +7,10 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import FAQ from "../components/faq"
 import Paper from "@material-ui/core/Paper"
+import Button from "@material-ui/core/Button"
+
+import { TiSocialInstagram } from "react-icons/ti"
+import { FaFacebookSquare } from "react-icons/fa"
 //
 
 //Need a good metadescription for everything. use keywords you want to rank for, Declarative, active voice, call to action,
@@ -32,98 +36,136 @@ var data
 const IndexPage = () => (
   <Layout>
     {imagequery()}
-    <SEO title="Rehab in Motion | Calgary-based Kinesiotherapy | " description="Injury Rehab and Exercise Therapy, bringing treatment and recovery to you. 
-Get in touch to share about your injury or fitness goals." />
-    <div class="hero">
-      {/*stretchImages("yoga-hero-dark.png")*/}
-    </div>
+    <SEO
+      title="Calgary Injury Rehab | Personal Training"
+      description="Injury Rehab and Exercise Therapy, bringing treatment and recovery to you. 
+Get in touch to share about your injury or fitness goals."
+    />
+    <div class="hero">{/*stretchImages("yoga-hero-dark.png")*/}</div>
     <div class="heroText">
-        <h1>
-          Kinesiotherapy and Personal Training sessions in pursuit of your
-          goals, for your health, at your convenience.
-        </h1>
-      </div>
+      <h1>
+        Kinesiotherapy and Personal Training sessions in pursuit of your goals,
+        for your health, at your convenience.
+      </h1>
+      <br />
+      <br />
+      <Button id="CTA" variant="contained" color="primary" href="/book/" size="large">
+        Get Care Fast
+      </Button>
+    </div>
     <div class="belowHero">
       <div id="eishcontainer">
         {" "}
         {/* Makes a small left aligned div */}
         <div id="eishport">
           {stretchImages("aleisia-kinesiologist.png")}
-          <h2> - Aleisia Arkley, <br/>BSc. Kinesiology, <br/>University of Calgary</h2>
+          <h2>
+            {" "}
+            - Aleisia Arkley <br />
+            BSc. Kinesiology <br />
+            University of Calgary
+          </h2>
         </div>
-        <div id="eishport-text2">
-          <span id="highlight-1"><p>
-            Certified Exercise Physiologist® with the Canadian Society for
-            Exercise Physiology
-          </p>
-          <p>
-            Registered Kinesiologist with the Alberta Kinesiology Association
-          </p></span>
+        <div id="socials">
+          <a href="https://www.instagram.com/rehab.in.motion/" target="_blank" title="Instagram Icon Link"><TiSocialInstagram id="insta" size="50"/></a>
+          <a href="https://www.facebook.com/Rehab-In-Motion-108099270670210/" target="_blank" title="Facebook Icon Link"><FaFacebookSquare id="fb" size="42" /></a>
         </div>
       </div>
-      <Paper  elevation="12" classes={{root: "below-port"}} id="marginUp" style={{ marginBottom: "1.6em" }}>
+      <div id="eishport-text2">
+          <span id="highlight-1">
+            <p>
+              Certified Exercise Physiologist® with the Canadian Society for
+              Exercise Physiology
+            </p>
+            <p>
+              Registered Kinesiologist with the Alberta Kinesiology Association
+            </p>
+          </span>
+        </div>
+      <Paper
+        elevation="12"
+        classes={{ root: "below-port" }}
+        id="marginUp"
+        style={{ marginBottom: "1.6em" }}
+      >
         <br />
         {/*make paper skinnier*/}
         <div class="below-port" id="marginUp">
-          <h2>What is Kinesiology?</h2>
-          <p>
-            Simply put, kinesiology is the study of movement. Specializations
-            can include anything under the umbrella of the anatomical,
-            physiological and biomechanical relationships of movement in the
-            human body. More practically, kinesiology utilizes scientific
-            research to make assessments to aid in the enhancement of human
-            performance, such as sport or work environments and to assist in the
-            prevention or rehabilitation of injury, lifestyle diseases and other
-            physiological conditions.{" "}
+          <h2>What is Kinesiotherapy?</h2>
+          <br />
+          <br />
+          <p style={{ fontSize: "1.3rem" }}>
+            Kinesiotherapists make use of medical research to guide
+            rehabilitation and prevent injury, lifestyle diseases, and other
+            physiological conditions related to painful or restricted movement.{" "}
           </p>
         </div>
       </Paper>
-      <Paper style={{ marginBottom: "1.6em" }}>
+      <h2 style={{marginTop: "3rem"}}>What do Kinesiotherapists Do?</h2>
+      <div
+        style={{ display: "flex", flexFlow: "row wrap", fontSize: "1.3rem" }}
+      >
+        <div class="serve-i">
+          Manage Chronic Disease
+          <br />
+          Manage Physical Limitations
+          <br />
+          Concussion Assessments and Recovery
+          <br />
+        </div>
+        <div class="serve-i">
+          Weight Loss and Body Recomposition <br />
+          Core Strengthening <br />
+          Resistance Training <br />
+        </div>
+        <div class="serve-i d">
+          Improve Quality of Movement
+          <br />
+          Improve Range of Motion and Balance
+          <br />
+          Foster Passion for Daily Active Living <br />
+        </div>
+      </div>
+      <Paper elevation="4" style={{ marginBottom: "1.6em" }}>
         <div class="trainingImage">
           {stretchImages("joint-mobilization.jpg")}
           {/*stretchImages("sports-massage.jpg")*/}
         </div>
         <div class="below-port">
-          <Link to="/services/#top" className="bodyLink" state={{ index: 1 }}><h3>Rehab Therapy Services</h3></Link>
+          <Link to="/services/#top" className="bodyLink" state={{ index: 1 }}>
+            <h3>Rehab Therapy Services</h3>
+          </Link>
           <div id="rehab-port">
-            <div id="left-hab">
-              {stretchImages("injury-free.png")}
-            </div>
+            <div id="left-hab">{stretchImages("injury-free.png")}</div>
             <div id="right-hab">
               <p>
-                Chronic Pain Management • Improved Range of Motion and Balance •
-                Managing Physical Limitations • Concussion Assessments and
-                Management • Managing Chronic Diseases (Cardiovascular,
-                Diabetes, Osteoarthritis etc.) • Weight Loss and Healthy Weight
-                Maintenance • Core Conditioning and Strengthening • Resistance
-                Training • Improved Quality of Movement and Technique •
-                Fostering Passion for Daily Active Living
-              </p>
-              <p>
-                Whether your goals are for performance or pain management, We
-                perform a functional movement assessment. Often, MOBILITY is as
-                important as strength with regard to your performance goals.
-                Especially if you have previous injuries, pain, or play a sport
-                requiring repetitive movement and joint stress. TECHNIQUE IS KEY
-                to optimal performance and staying pain free alike.
+                By making a comprehensive assessment of how you are moving,
+                we'll identify what is causing you pain or restricting your
+                range of motion.
+                <br />
+                <br />
+                Pain often comes from a biomechanical imbalance in the body:
+                when segments of the joints and muscles are moving out of
+                alignment, it can build tension in some muscles and the brain's
+                neurological system.
+                <br />
+                <br />
+                We can start with a therapeutic approach aimed at relief
+                initially, while over time building functional exercises into
+                your daily routine to help you move like new.
               </p>
             </div>
           </div>
         </div>
       </Paper>
-      <Paper elevation="4"style={{ marginBottom: "1.6em" }}>
+      <Paper elevation="4" style={{ marginBottom: "1.6em" }}>
         <div class="below-port">
-          <Link to="/services/#top" className="bodyLink" state={{ index: 2 }}><h3>Personal Training & Assessment</h3></Link>
+          <Link to="/services/#top" className="bodyLink" state={{ index: 2 }}>
+            <h3>Personal Training & Assessment</h3>
+          </Link>
           <div id="train-port">
             <div id="left-train">
-              <p>
-                Want to make a regular habit of exercise, but are having trouble
-                motivating? No problem! Together we will boost your confidence
-                in your ability to succeed. Our aim will be to gradually
-                increase your activity levels to make sure you are hitting the
-                requirements to see the physiological health and mental wellness
-                benefits of exercise.
-              </p>
+
               <p>
                 For performance and sport specific training, we know that all
                 sports require specific components of fitness: speed, power,
@@ -132,14 +174,20 @@ Get in touch to share about your injury or fitness goals." />
                 well-rounded program to net results in those specific areas,
                 focusing on proper technique and a mindful approach to training.
               </p>
+              <p>
+                Want to make a regular habit of exercise, but are having trouble
+                motivating? No problem! <br/><br/>Together we will boost your confidence
+                in your ability to succeed. Our aim will be to gradually
+                increase your activity levels to make sure you are hitting the
+                requirements to see the physiological health and mental wellness
+                benefits of exercise. 
+              </p>
             </div>
-            <div id="right-train">
-              {stretchImages("hiit-silhouette.png")}
-            </div>
+            <div id="right-train">{stretchImages("hiit-silhouette.png")}</div>
           </div>
         </div>
       </Paper>
-
+      <h3>Model of Care</h3>
       <FAQ />
     </div>
   </Layout>

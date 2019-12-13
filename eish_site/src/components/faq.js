@@ -1,6 +1,6 @@
 import React from "react"
 import Collapsible from "react-collapsible"
-import Paper from "@material-ui/core/Paper"
+import { Link } from "gatsby"
 //state visible true/false I guess? Maybe not.
 //kind of garbage but its ok.
 const FAQ = () => {
@@ -11,7 +11,9 @@ const FAQ = () => {
 				office called Advanced Primary Care. Further, she is a certified exercise physiologist and comes from a competitive sports background.</p>
 			</Collapsible>
 			<Collapsible trigger="Research Backed Methods">
-				<p>All treatments offered are in use in certified clinical practice, and are backed by peer-reviewed research. You can delve into this research on our resources page.</p>
+				<p>All treatments offered are in use in certified clinical practice, and are backed by peer-reviewed research. You can delve into this research on our <Link to="/resources/">
+        resources 
+      </Link> page</p>
 			</Collapsible>
 			<Collapsible trigger="Availability & Convenience">
 				<p>We are dedicated to offering patients access to treatment as easily and often as possible. We are available for same-day appointments seven days a week, 7AM to 8PM. Allowing you to get the care you need when you need it.</p>

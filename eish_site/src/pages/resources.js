@@ -11,7 +11,7 @@ const ResourcesPage = () => (
 			description="Sources detailing the efficacy of exercise therapy methods we
     use and the benefits of exercise for improving mental health and neurodegenerative disorders."
 		/>
-		<Paper elevation="1" id="paper" class="resources" style={{ marginBottom: "1.6em" }}>
+		<Paper  elevation="12" classes={{root: "resources"}} style={{ marginBottom: "1.6em" }}>
 			<h1>Resources</h1>
 
 			<h4>Counselling and Exercise Prescription Sources</h4>
@@ -25,7 +25,7 @@ const ResourcesPage = () => (
 			</p>
 
 			<h4>Manual Therapy Technique Information</h4>
-			<h5>Active Release Therapy - patent information</h5>
+			<h5>Active Release Therapy - Patent Information</h5>
 			<p>
 				Leahy PM, Patterson T, inventors; Active Release Techniques, Llc,
 				assignee. <br/>Expert system soft tissue active motion technique for release

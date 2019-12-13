@@ -44,9 +44,6 @@ const Header = ({ siteTitle }) => (
       <Link to="/services/" className="navLink" id="marginUp20" state={{index:0}} activeStyle={{color: "#E39774"}}>
         Services
       </Link>
-      <Link to="/resources/" className="navLink" id="marginUp20" activeStyle={{color: "#E39774"}}>
-        Resources
-      </Link>
       <Link to="/rates/" className="navLink" id="marginUp20" activeStyle={{color: "#E39774"}}>
         Rates
       </Link>
