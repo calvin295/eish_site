@@ -55,6 +55,10 @@ Get in touch to share about your injury or fitness goals."
     </div>
     <div class="belowHero">
       <div id="eishcontainer">
+      <div id="socials">
+          <a href="https://www.instagram.com/rehab.in.motion/" target="_blank" title="Instagram Icon Link"><TiSocialInstagram id="insta" size="50"/></a>
+          <a href="https://www.facebook.com/Rehab-In-Motion-108099270670210/" target="_blank" title="Facebook Icon Link"><FaFacebookSquare id="fb" size="42" /></a>
+        </div>
         {" "}
         {/* Makes a small left aligned div */}
         <div id="eishport">
@@ -66,10 +70,7 @@ Get in touch to share about your injury or fitness goals."
             University of Calgary
           </h2>
         </div>
-        <div id="socials">
-          <a href="https://www.instagram.com/rehab.in.motion/" target="_blank" title="Instagram Icon Link"><TiSocialInstagram id="insta" size="50"/></a>
-          <a href="https://www.facebook.com/Rehab-In-Motion-108099270670210/" target="_blank" title="Facebook Icon Link"><FaFacebookSquare id="fb" size="42" /></a>
-        </div>
+        
       </div>
       <div id="eishport-text2">
           <span id="highlight-1">
@@ -83,7 +84,7 @@ Get in touch to share about your injury or fitness goals."
           </span>
         </div>
       <Paper
-        elevation="12"
+        elevation="4"
         classes={{ root: "below-port" }}
         id="marginUp"
         style={{ marginBottom: "1.6em" }}
@@ -92,8 +93,6 @@ Get in touch to share about your injury or fitness goals."
         {/*make paper skinnier*/}
         <div class="below-port" id="marginUp">
           <h2>What is Kinesiotherapy?</h2>
-          <br />
-          <br />
           <p style={{ fontSize: "1.3rem" }}>
             Kinesiotherapists make use of medical research to guide
             rehabilitation and prevent injury, lifestyle diseases, and other

@@ -207,6 +207,10 @@ export default function FullWidthTabs({ startIndex }) {
 				<TabPanel value={value} index={2} dir={theme.direction}>
 					<h3>Fitness Training</h3>
 					<div id="sport-specific-div">
+						<p>Fitness training is an important facet of recovering from any injury.
+						We will design a training program to rebuild injured muscular or
+						connective structures by working against gradually increasing loads or 
+						pushing the zone of proximal development in your range of motion for affected joints.</p>
 						<p>
 							We can specifically test attributes like range of motion,
 							endurance, strength, flexibility, and aerobic capacity, and design

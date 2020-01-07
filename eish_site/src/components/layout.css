@@ -127,7 +127,6 @@ template {
   font-size: 1.4em;
   font-family: 'Roboto-Condensed', sans-serif;
   font-weight: bold;
-  font-style: italic;
   text-rendering: optimizeLegibility;
     /* Multiple Browser Support */
   -o-transition:.5s;
@@ -353,7 +352,7 @@ input::placeholder {
 #eishport {
   flex: 1;
   max-width: 280px;
-  margin: 0px 0px 1.45rem 50px;
+  margin: 0px 0px 1.45rem 5px;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 2px, 4px rgba(0,0,0,0.8);
@@ -433,7 +432,7 @@ input::placeholder {
   padding-top: 1.45rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1.45rem;
+  padding-bottom: 1rem;
   max-width:750px;
   margin-left:auto;
   margin-right: auto;
@@ -1133,7 +1132,7 @@ pre tt:after {
   }
   #eishport {
     max-width: 200px;
-    margin: 0px 0px 1.45rem 50px;
+    margin: 0px 0px 1rem 5px;
   }
   #eishport h2 {
     max-width:300px;
@@ -1148,10 +1147,6 @@ pre tt:after {
   }
 }
 @media only screen and (max-width: 780px) {
-  .below-port {
-    padding-left: 2.0875rem;
-    padding-right: 2.0875rem;
-  }
   #highlight {
   font-size: 2rem;
   }
@@ -1202,7 +1197,7 @@ pre tt:after {
   }
   #eishport {
     max-width: 150px;
-    margin: 0px 0px 1.45rem 10px;
+    margin: 0px 0px 1rem 5px;
     text-align: left;
   }
   #eishport h2 {
