@@ -479,11 +479,11 @@ input::placeholder {
   border: 1px solid white;
   padding: 30px;
   font-size: 1.2em;
-  background: #382A7F;
+  background: #0D4D6B;
   color: white;
 }
 .Collapsible__trigger:hover {
-  background: midnightblue;
+  background: #25345E;
 }
 .Collapsible__trigger:after {
   content: '\271A';
@@ -1169,6 +1169,11 @@ pre tt:after {
   html {
     font-size: 100%; 
   }
+  #logo {
+    padding-right: 0.4rem;
+    position:relative;
+    top: 15px;
+  }
   .belowHero {
     padding-left: 0.4rem;
     padding-right: 0.4rem;
@@ -1246,6 +1251,13 @@ pre tt:after {
 }
 /* SMALLEST SCREEN (phones) TODO*/
 @media only screen and (max-width: 480px) {
+  .topNav {
+    padding-top: 0.4rem;
+    padding-bottom: 0.6rem;
+    padding-right:0;
+    padding-left:0;
+  }
+  
   .hero::before {
     background-position: 75% 50%;
   }
@@ -1302,3 +1314,18 @@ pre tt:after {
     font-size: 1.4rem;
   }
 }
+@media only screen and (max-width: 335px) {
+  .topNav {
+    margin: 0.4rem;
+  }
+  #logo {
+    top:0px;
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+    padding-right: 0;
+  }
+  .navLink {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  }
