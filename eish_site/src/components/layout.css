@@ -1257,7 +1257,7 @@ pre tt:after {
     padding-right:0;
     padding-left:0;
   }
-  
+
   .hero::before {
     background-position: 75% 50%;
   }
@@ -1306,6 +1306,9 @@ pre tt:after {
     width: 80%;
     margin-left:0px;
     margin-right:0px;
+  }
+  #eishport {
+    margin: 0 0 2rem 5px;
   }
   #eishport-text2 p{
     font-size: 1rem;
