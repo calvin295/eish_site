@@ -72,9 +72,14 @@ export default function FullWidthTabs({ startIndex }) {
 					aria-label="services tabs"
 				>
 					{/*tab headings*/}
-					<Tab label="Daily Active Living" {...a11yProps(0)} />
-					<Tab label="Pain Management & Injury Rehab" {...a11yProps(1)} />
-					<Tab label="Performance Fitness Training" {...a11yProps(2)} />
+					<Tab
+						label="Chronic Pain Management & Acute Injury Rehab"
+						{...a11yProps(0)}
+					/>
+					<Tab
+						label="Maintenance Rehab & Training for Functional Performance"
+						{...a11yProps(1)}
+					/>
 				</Tabs>
 			</AppBar>
 			<SwipeableViews
@@ -83,26 +88,19 @@ export default function FullWidthTabs({ startIndex }) {
 				onChangeIndex={handleChangeIndex}
 			>
 				<TabPanel value={value} index={0} dir={theme.direction}>
-					<div class="inner-tab">
-						<h3>Get Motivated</h3>
+					<h3>Rehab Process</h3>
+					<div class="belowHero">
 						<p>
-							Despite the countless benefits of exercise, the tricky part is
-							always staying consistent with an achievable plan that keeps you
-							meaningfully engaged and challenged.
+							Following our comprehensive movement assessment, we'll identify
+							what is causing you pain or restricting your range of motion.
 						</p>
 						<p>
-							I overcome this by taking the time to get to know you and
-							understand your personal goals and interests are.
+							For a therapist, the goal is often two-fold: relief, and
+							prevention. We will use targeted treatments for pain or tension
+							initially. Over time, strengthening imbalanced muscles and teasing
+							out mobility from the joints can offer more permanent relief and
+							prevent further injury.
 						</p>
-						<p>
-							We'll start with small changes and progress gradually, focusing on
-							your priorities and what you enjoy
-						</p>
-						<p>
-							From there, I provide exercise counselling informed by behaviour
-							change theory models from exercise psychology research.
-						</p>
-						<h3>Maintain a Healthy Lifestyle</h3>
 						<p>
 							All assessments are based on CSEP’s standardized guidelines for
 							functional fitness testing. Assessment scores will be compared to
@@ -111,50 +109,13 @@ export default function FullWidthTabs({ startIndex }) {
 						</p>
 						<p>
 							This data will provide an objective baseline for us to maintain
-							your functional health
-						</p>
-						<p>
-							As the literature indicates, some age related decline in fitness
-							is normal, however with the right activity, you can maintain your
-							levels and even improve well into your 80’s. We can continually
-							use the assessment data to make sure that you are not declining
-							too rapidly.
-						</p>
-						<p>
-							Finally, we can continue to set goals to keep you motivated to
-							maintain your level you are at.
-						</p>
-						<h3>Improve Your Fitness</h3>
-						<p>
-							We will inspire you to improve yourself FOR yourself. Improve your
-							self efficacy by boosting your confidence in your ability to
-							succeed.
-						</p>
-						<p>
-							We will aim to gradually increase your activity levels to make
-							sure you are hitting the requirements to see the physiological
-							health and mental wellness benefits of exercise.
-						</p>
-					</div>
-				</TabPanel>
-				<TabPanel value={value} index={1} dir={theme.direction}>
-					<h3>Rehab Process</h3>
-					<div class="belowHero">
-						<p>
-							Following our comprehensive movement assessment, we'll
-							identify what is causing you pain or restricting your range of motion.
-							<br />
-							<br />
-							For a therapist, the goal is often two-fold: relief, and prevention.
-							We will use targetted treatments for pain or tension initially. Over time,
-							strengthening imbalanced muscles and teasing out mobility from the joints
-							can offer more permanent relief and prevent further injury. 
+							and build your functional health
 						</p>
 						<h3>Pain Management Therapies</h3>
 
 						<p>
-							All techniques offered are in use in certified clinical
-							practice, and are backed by peer-reviewed research.
+							All techniques offered are in use in certified clinical practice,
+							and are backed by peer-reviewed research.
 						</p>
 						<Collapsible trigger="Assisted Range Of Motion Improvement">
 							<p>
@@ -204,37 +165,75 @@ export default function FullWidthTabs({ startIndex }) {
 						</Collapsible>
 					</div>
 				</TabPanel>
-				<TabPanel value={value} index={2} dir={theme.direction}>
-					<h3>Fitness Training</h3>
+				<TabPanel value={value} index={1} dir={theme.direction}>
+					<h3>Training for Functional Performance</h3>
 					<div id="sport-specific-div">
-						<p>Fitness training is an important facet of recovering from any injury.
-						We will design a training program to rebuild injured muscular or
-						connective structures by working against gradually increasing loads or 
-						pushing the zone of proximal development in your range of motion for affected joints.</p>
 						<p>
-							We can specifically test attributes like range of motion,
-							endurance, strength, flexibility, and aerobic capacity, and design
-							a well-rounded, progressive training program to meet your
-							performance goals in these areas.
+							Fitness training is an important facet of recovering from any
+							injury. We will design a training program to rebuild injured
+							muscular or connective structures by working against gradually
+							increasing loads or pushing the zone of proximal development in
+							your range of motion for affected joints.
 						</p>
 						<p>
-							All sports demand very specific components of our fitness: speed,
-							power, agility and coordination. To improve these, We can
-							integrate cross training with HIIT style workouts, as well as
-							design programs with high specificity to whatever sport you are
-							training for.
+							Maintaining joint function is critical to avoid any further injury
+							or chronic pain that can occur from repetitive use and motions
+							that sports often demand. Common examples include: runner’s knee,
+							jumper’s knee, tennis elbow, golfer’s elbow, carpal tunnel
+							syndrome, shin splints, rotator cuff tendinitis, Achilles
+							tendinitis and back pain.
 						</p>
 						<p>
-							Sports also require multiple intervals of low to high intensity
-							training for your cardiovascular fitness, and depending on the
-							interval, you are using a different energy system for your muscles
-							to work. We will integrate interval training to challenge all
-							energy systems.
+							Successfully training for robust recovery and performance gains
+							requires practicing movements combining specificity and
+							variability. Over time, the successful trainee will follow a
+							graduated progression of difficulty.
 						</p>
+						<h6>Specificity</h6>
 						<p>
-							We will focus on improving your anaerobic lactate threshold which
-							is important for any sport that requires a maximal effort at the
-							go.
+							Once joint function is assessed, we can test other attributes like
+							range of motion, endurance, strength, flexibility, and aerobic
+							capacity. From these assessments we can design a well-rounded,
+							progressive training program to meet your performance goals.
+							Programs with high specificity of locomotion to whatever sport you
+							are training for. Examples of locomotion specific training are:
+							jumping, sprinting, jogging and hopping. We will combine your
+							locomotion specificity with addressing the terrain you perform on
+							such as water, ground, air and ice.
+						</p>
+						<h6>Variability</h6>
+						<p>
+							Continuous performance gains also require variability in training.
+							We design programs with progressive variability to avoid a plateau
+							in your performance. Plateaus can happen from insufficient
+							recovery and adaptation to overly-specific training. Cross
+							training with other activities will help improve components of
+							fitness that would otherwise plateau in your specific training
+							program in addition to helping you recover. Sports also require
+							multiple intervals of low to high intensity training for your
+							cardiovascular fitness, and depending on the interval, you are
+							using a different energy system for your muscles to work. We will
+							integrate interval training to challenge all energy systems,
+							including aerobic, anaerobic and phosphocreatine systems. Training
+							each system will include a variety of longer periods of low
+							intensity movements to short quick bursts of powerful agile
+							movements.
+						</p>
+						<h6>Graduated Progression</h6>
+						<p>
+							Training in specific components of fitness also requires following
+							the principle of overload for optimal performance. This means the
+							training stimulus must be greater than the body is accustomed to.
+							Keeping injury prevention in mind, it is important to
+							progressively build the training stimulus to avoid overuse injury.
+							Progression components include: frequency, intensity, duration and
+							the number of repetitions and sets in a program. Your specific
+							performance goals will dictate how we progress, for example:
+							endurance improvement, strength improvement, speed improvement or
+							muscle mass building. We will focus on improving your anaerobic
+							lactate threshold which is important for any sport that requires a
+							maximal effort at the go. This involves maximal intensity
+							training.
 						</p>
 					</div>{" "}
 					{/*tab content*/}

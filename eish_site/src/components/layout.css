@@ -479,11 +479,11 @@ input::placeholder {
   border: 1px solid white;
   padding: 30px;
   font-size: 1.2em;
-  background: #0D4D6B;
+  background: #083353;
   color: white;
 }
 .Collapsible__trigger:hover {
-  background: #25345E;
+  background: #0A4C69;
 }
 .Collapsible__trigger:after {
   content: '\271A';
@@ -792,11 +792,11 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: '-apple-system, Roboto-Slab', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bolder;
   text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
-  line-height: 1.1;
+  font-size: 1.1rem;
+  line-height: 1.3;
 }
 hgroup {
   margin-left: 0;

@@ -49,17 +49,36 @@ Get in touch to share about your injury or fitness goals."
       </h1>
       <br />
       <br />
-      <Button id="CTA" variant="contained" color="primary" href="/book/" size="large">
+      <Button
+        id="CTA"
+        variant="contained"
+        color="primary"
+        href="/book/"
+        size="large"
+      >
         Get Care Fast
       </Button>
     </div>
     <div class="belowHero">
       <div id="eishcontainer">
-      <div id="socials">
-          <a href="https://www.instagram.com/rehab.in.motion/" target="_blank" title="Instagram Icon Link"><TiSocialInstagram id="insta" size="50"/></a>
-          <a href="https://www.facebook.com/Rehab-In-Motion-108099270670210/" target="_blank" title="Facebook Icon Link"><FaFacebookSquare id="fb" size="42" /></a>
-        </div>
-        {" "}
+        <div id="socials">
+          <a
+            href="https://www.instagram.com/rehab.in.motion/"
+            target="_blank"
+            rel="noopener"
+            title="Instagram Icon Link"
+          >
+            <TiSocialInstagram id="insta" size="50" />
+          </a>
+          <a
+            href="https://www.facebook.com/Rehab-In-Motion-108099270670210/"
+            target="_blank"
+            rel="noopener"
+            title="Facebook Icon Link"
+          >
+            <FaFacebookSquare id="fb" size="42" />
+          </a>
+        </div>{" "}
         {/* Makes a small left aligned div */}
         <div id="eishport">
           {stretchImages("aleisia-kinesiologist.png")}
@@ -70,19 +89,18 @@ Get in touch to share about your injury or fitness goals."
             University of Calgary
           </h2>
         </div>
-        
       </div>
       <div id="eishport-text2">
-          <span id="highlight-1">
-            <p>
-              Certified Exercise Physiologist® with the Canadian Society for
-              Exercise Physiology
-            </p>
-            <p>
-              Registered Kinesiologist with the Alberta Kinesiology Association
-            </p>
-          </span>
-        </div>
+        <span id="highlight-1">
+          <p>
+            Certified Exercise Physiologist® with the Canadian Society for
+            Exercise Physiology
+          </p>
+          <p>
+            Registered Kinesiologist with the Alberta Kinesiology Association
+          </p>
+        </span>
+      </div>
       <Paper
         elevation="4"
         classes={{ root: "below-port" }}
@@ -100,7 +118,7 @@ Get in touch to share about your injury or fitness goals."
           </p>
         </div>
       </Paper>
-      <h2 style={{marginTop: "3rem"}}>What do Kinesiotherapists Do?</h2>
+      <h2 style={{ marginTop: "3rem" }}>What do Kinesiotherapists Do?</h2>
       <div
         style={{ display: "flex", flexFlow: "row wrap", fontSize: "1.3rem" }}
       >
@@ -131,7 +149,7 @@ Get in touch to share about your injury or fitness goals."
           {/*stretchImages("sports-massage.jpg")*/}
         </div>
         <div class="below-port">
-          <Link to="/services/#top" className="bodyLink" state={{ index: 1 }}>
+          <Link to="/services/#top" className="bodyLink" state={{ index: 0 }}>
             <h3>Rehab Therapy Services</h3>
           </Link>
           <div id="rehab-port">
@@ -159,27 +177,23 @@ Get in touch to share about your injury or fitness goals."
       </Paper>
       <Paper elevation="4" style={{ marginBottom: "1.6em" }}>
         <div class="below-port">
-          <Link to="/services/#top" className="bodyLink" state={{ index: 2 }}>
-            <h3>Personal Training & Assessment</h3>
+          <Link to="/services/#top" className="bodyLink" state={{ index: 1 }}>
+            <h3>Fitness Training for Chronic Pain and Post Injury</h3>
           </Link>
           <div id="train-port">
             <div id="left-train">
-
               <p>
-                For performance and sport specific training, we know that all
-                sports require specific components of fitness: speed, power,
-                agility and coordination. We'll test these components
-                specifically to establish your baselines, then design a
-                well-rounded program to net results in those specific areas,
-                focusing on proper technique and a mindful approach to training.
+                Fitness training is an important facet of recovering from any
+                injury. We will design a training program to rebuild injured
+                muscular and connective structures by working against gradually
+                increasing loads and pushing the zone of proximal development in
+                your range of motion for affected joints.
               </p>
               <p>
-                Want to make a regular habit of exercise, but are having trouble
-                motivating? No problem! <br/><br/>Together we will boost your confidence
-                in your ability to succeed. Our aim will be to gradually
-                increase your activity levels to make sure you are hitting the
-                requirements to see the physiological health and mental wellness
-                benefits of exercise. 
+                Successfully training for robust recovery and performance gains requires
+                practicing movements combining specificity and variability. Over
+                time, the successful trainee will follow a graduated progression
+                of difficulty.
               </p>
             </div>
             <div id="right-train">{stretchImages("hiit-silhouette.png")}</div>
