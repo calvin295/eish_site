@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
 
-const showLogo = () => {
+const ShowLogo = () => {
   const logo = useStaticQuery(graphql`
       query {
         image: file(relativePath: { eq: "vitruvian-white.png" }) {
@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
           <div style={{display:'inline-flex',
           alignContent: 'left'}}> {siteTitle} </div>
         </Link>
-        <div id="logo"><Link to="/">{showLogo()}</Link></div>
+        <div id="logo"><Link to="/">{ShowLogo()}</Link></div>
       <div className="link-wrapper">
       {/*<Link to="/resources/" className="navLink" id="marginUp20" activeStyle={{color: "orange"}}>
         Resources

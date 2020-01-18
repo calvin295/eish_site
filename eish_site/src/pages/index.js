@@ -15,7 +15,7 @@ import { FaFacebookSquare } from "react-icons/fa"
 
 //Need a good metadescription for everything. use keywords you want to rank for, Declarative, active voice, call to action,
 //do the query once when the page loads.
-const imagequery = () => {
+const Imagequery = () => {
   data = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -35,7 +35,7 @@ var data
 
 const IndexPage = () => (
   <Layout>
-    {imagequery()}
+    {Imagequery()}
     <SEO
       title="Calgary Injury Rehab | Personal Training"
       description="Injury Rehab and Exercise Therapy, bringing treatment and recovery to you. 
