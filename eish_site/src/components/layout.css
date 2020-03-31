@@ -66,6 +66,15 @@ header {
   transform-style: preserve-3d;
   z-index: 1;
 }
+#covid {
+  background-color: red;
+
+}
+#covid p {
+  color: white;
+  margin-left: 7%;
+  margin-right: 7%;
+}
 article,
 aside,
 details,
