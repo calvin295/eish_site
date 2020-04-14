@@ -53,7 +53,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
     <div id="covid">
-      <p>Announcement Re: COVID-19: The Alberta Kinesiology Association is strongly recommending remote delivery of services. This is applicable to our personalized exercise programs, active rehab, and training services. The price for a one hour session will be $35. To learn more please contact us.</p>
+      <p>Announcement: In light of recommendations from provincial health authorities re: COVID-19, our personalized exercise programs, active rehab, and training services will be provided through a secure, remote platform, FREE OF CHARGE for the duration of the restrictions. To learn more please contact us.</p>
     </div>
   </header>
 )

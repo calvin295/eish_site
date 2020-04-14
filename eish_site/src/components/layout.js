@@ -50,6 +50,8 @@ const Layout = ({ children }) => {
               <h6>Contact</h6>
               <a href="mailto:aarkl050@mtroyal.ca">aarkl050@mtroyal.ca</a>
               <br />
+              <a href="tel:+1-403-540-1138">1-403-540-1138</a>
+              <br />
             </address>
           </div>
           <h6 style={{ margin: "10px 0px 0px 0px" }}>
