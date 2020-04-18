@@ -1127,7 +1127,7 @@ pre tt:after {
   .hero {
   }
   .heroText {
-    margin-top: -50px;
+    margin-top: 15px;
   }
   .heroText h1{
     font-size: 1.5em;
@@ -1197,12 +1197,14 @@ pre tt:after {
   }
   .heroText {
     font-size: 1rem;
-    margin-top: 0px;
+    margin-top: 50px;
     width: 80%;
     margin-left:0px;
     margin-right:0px;
   }
-
+  #CTA {
+    margin-top: 30px;
+  }
   textarea {
     width: 80vw;
   }
@@ -1260,6 +1262,10 @@ pre tt:after {
 }
 /* SMALLEST SCREEN (phones) TODO*/
 @media only screen and (max-width: 480px) {
+  #covid p {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .topNav {
     padding-top: 0.4rem;
     padding-bottom: 0.6rem;
@@ -1304,17 +1310,22 @@ pre tt:after {
   .grid_item {
     margin-bottom: 4rem;
   }
-
+  .heroText {
+    margin-top: 60px;
+  }
 }
 @media only screen and (max-width: 350px) {
   .topNav {
     padding-top: 0.4rem;
   }
   .heroText {
-    margin-top: 15px;
     width: 80%;
+    margin-top: 130px;
     margin-left:0px;
     margin-right:0px;
+  }
+  #CTA {
+    margin-top: 50px;
   }
   #eishport {
     margin: 0 0 2rem 5px;
@@ -1329,6 +1340,12 @@ pre tt:after {
 @media only screen and (max-width: 335px) {
   .topNav {
     margin: 0.4rem;
+  }
+  .heroText {
+    margin-top: 230px;
+  }
+  #CTA {
+    margin-top: 50px;
   }
   #logo {
     top:0px;
