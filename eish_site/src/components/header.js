@@ -53,7 +53,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
     <div id="covid">
-      <p>Announcement: In light of recommendations from provincial health authorities re: COVID-19, our personalized exercise programs, active rehab, and training services will be provided through a secure, remote platform, FREE OF CHARGE for the duration of the restrictions. To learn more please contact us.</p>
+      <p>Announcement: All personalized exercise programs, active rehab, and training services have resumed under the latest COVID-19 guidelines from AHS</p>
     </div>
   </header>
 )
