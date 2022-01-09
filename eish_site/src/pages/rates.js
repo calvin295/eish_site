@@ -45,12 +45,12 @@ $60 / session."
 			<div id="rate">
 				<h3>
 					<sup id="dollar">$</sup>
-					<span id="amount">60</span>
+					<span id="amount">65</span>
 					<span id="per-hour"> / 60 minutes</span>
 				</h3>
 				<h3>
 					<sup id="dollar">$</sup>
-					<span id="amount">85</span>
+					<span id="amount">90</span>
 					<span id="per-hour"> / 90 minutes</span>
 				</h3>
 				<h3>
